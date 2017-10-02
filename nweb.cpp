@@ -276,18 +276,14 @@ int main(int argc, char **argv)
     }
 
     /* Become deamon + unstopable and no zombies children (= no wait()) */
-//    if(fork() != 0)
-//        return 7; /* parent returns OK to shell */
-
-//    (void)signal(SIGCLD, SIG_IGN); /* ignore child death */
-//    (void)signal(SIGHUP, SIG_IGN); /* ignore terminal hangups */
-
-//    for(i=0; i<32; i++)
-//        (void)close(i);     /* close open files */
-
-//    (void)setpgrp();        /* break away from process group */
-
-//    logger(LOG,"nweb starting",std::string(port),getpid());
+    if(fork() != 0)
+        return 7; /* parent returns OK to shell */
+    (void)signal(SIGCLD, SIG_IGN); /* ignore child death */
+    (void)signal(SIGHUP, SIG_IGN); /* ignore terminal hangups */
+    for(i=0;i<32;i++)
+        (void)close(i);		/* close open files */
+    (void)setpgrp();		/* break away from process group */
+//    logger(LOG,"nweb starting", std::string(port).c_str(), getpid());
 
     /* setup the network socket */
     if((listenfd = socket(AF_INET, SOCK_STREAM,0)) <0)
@@ -330,6 +326,4 @@ int main(int argc, char **argv)
             }
         }
     }
-
-    return 0;
 }

@@ -1846,3 +1846,288 @@ Connection: close
 Content-Type: text/xml
 
 :1
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ERROR: system call:bind Errno=98 exiting pid=12851
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ERROR: system call:bind Errno=98 exiting pid=12876
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ERROR: system call:bind Errno=98 exiting pid=12894
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ERROR: system call:bind Errno=98 exiting pid=12918
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ERROR: system call:bind Errno=98 exiting pid=12930
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ERROR: system call:bind Errno=98 exiting pid=12942
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ERROR: system call:bind Errno=98 exiting pid=13035
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
+ INFO: SEND:foo/bar.xml :1
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 647
+Connection: close
+Content-Type: text/xml
+
+:1
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ERROR: system call:bind Errno=98 exiting pid=13153
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
+ INFO: SEND:foo/bar.xml :1
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 647
+Connection: close
+Content-Type: text/xml
+
+:1
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ERROR: system call:bind Errno=98 exiting pid=13260
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ERROR: system call:bind Errno=98 exiting pid=13306
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ERROR: system call:bind Errno=98 exiting pid=13346
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:4
+ INFO: SEND:foo/bar.xml :4
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 647
+Connection: close
+Content-Type: text/xml
+
+:4
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8182**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
+ INFO: SEND:foo/bar.xml :1
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 647
+Connection: close
+Content-Type: text/xml
+
+:1
+ INFO: request:GET /favicon.ico HTTP/1.1**Host: localhost:8182**Connection: keep-alive**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://localhost:8182/foo/bar.json**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
+NOT FOUND: failed to open file:favicon.ico
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ERROR: system call:bind Errno=98 exiting pid=13410
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
+ INFO: SEND:foo/bar.xml :1
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 647
+Connection: close
+Content-Type: text/xml
+
+:1
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ERROR: system call:bind Errno=98 exiting pid=13587
+ INFO: hint: nweb Port-Number Top-Directory		version %d
+
+	nweb is a small and very safe mini web server
+	nweb only servers out file/web pages with extensions named below
+	 and only from the named directory or its sub-directories.
+	There is no fancy features = safe and secure.
+
+	Example: nweb 8080 /home/nwebdir &
+
+	Only Supports:: :0
+ERROR: system call:bind Errno=98 exiting pid=13597
+ INFO: nweb starting:8181:13765
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
+ INFO: SEND:image/test.png:1
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:1
+FORBIDDEN: failed to read browser request:
+ERROR: system call:bind Errno=98 exiting pid=13865
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
+ INFO: SEND:image/test.png:3
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:3
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:4
+ INFO: SEND:foo/bar.xml :4
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 647
+Connection: close
+Content-Type: text/xml
+
+:4
+ERROR: system call:bind Errno=98 exiting pid=13904
+FORBIDDEN: failed to read browser request:
+ INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:6
+ INFO: SEND:foo/light.xml :6
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 62041
+Connection: close
+Content-Type: text/xml
+
+:6
