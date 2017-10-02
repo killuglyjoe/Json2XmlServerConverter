@@ -100,22 +100,24 @@ namespace Json2Xml
             case rapidjson::kNumberType:
                 {
                     std::string str("");
+                    std::stringstream ss;
 
                     if(objName.IsDouble())
-                        str = std::to_string(objName.GetDouble());
+                        ss << (objName.GetDouble());
 
                     if(objName.IsInt())
-                        str = std::to_string(objName.GetInt());
+                        ss <<  (objName.GetInt());
 
                     if(objName.IsUint())
-                        str = std::to_string(objName.GetUint());
+                        ss <<  (objName.GetUint());
 
                     if(objName.IsInt64())
-                        str = std::to_string(objName.GetInt64());
+                        ss <<  (objName.GetInt64());
 
                     if(objName.IsUint64())
-                        str = std::to_string(objName.GetUint64());
+                        ss <<  (objName.GetUint64());
 
+                    str = ss.str();
                     rapidxml::xml_node<>* elem = xml_doc->allocate_node(rapidxml::node_element, (*rootIter)->name.GetString(),
                                                                         xml_doc->allocate_string(str.data()));
                     appenNode(elem, node, xml_doc);
