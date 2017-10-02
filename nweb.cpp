@@ -37,6 +37,16 @@ struct
     {
         {"json", "text/json" },
         {"xml",  "text/xml" },
+        {"gif", "image/gif" },
+        {"jpg", "image/jpg" },
+        {"jpeg","image/jpeg"},
+        {"png", "image/png" },
+        {"ico", "image/ico" },
+        {"zip", "image/zip" },
+        {"gz",  "image/gz"  },
+        {"tar", "image/tar" },
+        {"htm", "text/html" },
+        {"html","text/html" },
         {"",""}
     };
 
@@ -150,13 +160,14 @@ void web(int fd, int hit)
     for(i=0; !extensions[i].ext.empty(); i++)
     {
         len = (extensions[i].ext.length());
-        fstr = extensions[i].filetype;
 
         if( !strncmp(&buffer[buflen-len], extensions[i].ext.c_str(), len))
         {
+            fstr = extensions[i].filetype;
             // check for JSON file request and convert it to XML
             if(!strncmp("json", extensions[i].ext.c_str(), len))
             {
+                std::string json_file(&buffer[5]);
                 std::ifstream istream(&buffer[5]);
                 std::ostringstream oss;
                 oss << istream.rdbuf();
@@ -166,11 +177,16 @@ void web(int fd, int hit)
                 // Save to file
                 if(!xml_string.empty())
                 {
-                    std::ofstream file_stored("converted.xml");
+                    size_t start_pos = json_file.find("json");
+
+                    std::string xml_file(json_file.replace(start_pos, sizeof("xml "), "xml "));
+                    std::ofstream file_stored(xml_file.c_str());
                     file_stored << xml_string;
                     file_stored.close();
+
                     fstr = extensions[1].filetype;
-                    memcpy(&buffer[5], "converted.xml", sizeof("converted.xml"));
+                    // where is to output ??
+                    memcpy(&buffer[5], xml_file.data(), xml_file.length());
                 }
             }
             break;
@@ -218,7 +234,7 @@ int main(int argc, char **argv)
     static struct sockaddr_in cli_addr; /* static = initialised to zeros */
     static struct sockaddr_in serv_addr; /* static = initialised to zeros */
  
-    if( argc < 3  || argc > 3 || !strcmp(argv[1], "-?") )
+    if( argc < 3 || !strcmp(argv[1], "-?") )
     {
         logger(LOG,"hint: nweb Port-Number Top-Directory\t\tversion %d\n\n"
                    "\tnweb is a small and very safe mini web server\n"
@@ -226,37 +242,36 @@ int main(int argc, char **argv)
                    "\t and only from the named directory or its sub-directories.\n"
                    "\tThere is no fancy features = safe and secure.\n\n"
                    "\tExample: nweb 8080 /home/nwebdir &\n\n"
-                   "\tOnly Supports:", std::to_string(VERSION), hit);
+                   "\tOnly Supports:", " ", 0);
 
         for(i=0; !extensions[i].ext.empty(); i++)
-            (void)printf(" %s",extensions[i].ext.c_str());
+            (void)printf("    %s",extensions[i].ext.c_str());
 
-        (void)printf("\n\tNot Supported: URLs including \"..\", Java, Javascript, CGI\n"
-        "\tNot Supported: directories / /etc /bin /lib /tmp /usr /dev /sbin \n"
-        "\tNo warranty given or implied\n\tNigel Griffiths nag@uk.ibm.com\n"  );
+        (void)printf( "\n\tNot Supported: URLs including \"..\", Java, Javascript, CGI\n"
+                        "\tNot Supported: directories / /etc /bin /lib /tmp /usr /dev /sbin \n"
+                        "\tNo warranty given or implied\n\tNigel Griffiths nag@uk.ibm.com\n"  );
 
-//        exit(0);
     }
-    else
+    else if(argc > 3 )
     {
         port = atoi(argv[1]);
         rootDir = argv[2];
     }
 
-    const char rootDirChr(*rootDir.c_str());
+    const char *rootDirChr(rootDir.c_str());
 
-    if( !strncmp(&rootDirChr,"/"   ,2 ) || !strncmp(&rootDirChr,"/etc", 5 ) ||
-        !strncmp(&rootDirChr,"/bin",5 ) || !strncmp(&rootDirChr,"/lib", 5 ) ||
-        !strncmp(&rootDirChr,"/tmp",5 ) || !strncmp(&rootDirChr,"/usr", 5 ) ||
-        !strncmp(&rootDirChr,"/dev",5 ) || !strncmp(&rootDirChr,"/sbin",6) )
+    if( !strncmp(rootDirChr,"/"   ,2 ) || !strncmp(rootDirChr,"/etc", 5 ) ||
+        !strncmp(rootDirChr,"/bin",5 ) || !strncmp(rootDirChr,"/lib", 5 ) ||
+        !strncmp(rootDirChr,"/tmp",5 ) || !strncmp(rootDirChr,"/usr", 5 ) ||
+        !strncmp(rootDirChr,"/dev",5 ) || !strncmp(rootDirChr,"/sbin",6) )
     {
-        logger(LOG,"ERROR: Bad top directory %s, see nweb -?\n",&rootDirChr,hit);
+        logger(LOG,"ERROR: Bad top directory %s, see nweb -?\n",rootDirChr,0);
         exit(3);
     }
 
-    if(chdir(&rootDirChr) == -1)
+    if(chdir(rootDir.c_str()) == -1)
     {
-        logger(LOG,"ERROR: Can't Change to directory %s\n",&rootDirChr,hit);
+        logger(LOG,"ERROR: Can't Change to directory \n",rootDir.c_str(),0);
         exit(4);
     }
 
