@@ -17,6 +17,15 @@ MAKEFILE = QtMakefile
 
 TEMPLATE = app
 
+include($$PWD/convutils/rapidjson/rapidjson.pri)
+include($$PWD/convutils/rapidxml/rapidxml.pri)
+
 SOURCES += \
+    nweb.cpp \
 #    main.cpp \
-    nweb.c
+#    convutils/xml2json.cpp \
+#    convutils/json2xml.cpp
+
+HEADERS += \
+#    convutils/xml2json.hpp \
+#    convutils/json2xml.hpp
