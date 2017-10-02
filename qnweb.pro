@@ -7,9 +7,9 @@
 QT -= core
 QT -= gui
 
-TARGET = Json2XmlServerConverter
+TARGET = QNweb
 
-CONFIG += c++11 console
+CONFIG += c++98 console
 CONFIG -= app_bundle qml_debug
 
 #From Qt we need it's own makefile

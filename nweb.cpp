@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <errno.h>
-#include <string.h>
 #include <fcntl.h>
 #include <signal.h>
 #include <sys/types.h>
@@ -37,7 +36,7 @@ struct
     } extensions [] =
     {
         {"json", "text/json" },
-        {"xml", "text/xml" },
+        {"xml",  "text/xml" },
         {"",""}
     };
 
@@ -83,9 +82,9 @@ void logger(int type, const std::string &s1, const std::string &s2, int socket_f
     /* No checks here, nothing can be done with a failure anyway */
     if((fd = open("nweb.log", O_CREAT| O_WRONLY | O_APPEND,0644)) >= 0)
     {
-        (void)write(fd, logbuffer, strlen(logbuffer));
-        (void)write(fd,"\n",1);
-        (void)close(fd);
+        write(fd, logbuffer, strlen(logbuffer));
+        write(fd,"\n",1);
+        close(fd);
     }
 
     if(type == ERROR || type == NOTFOUND || type == FORBIDDEN)
@@ -221,13 +220,13 @@ int main(int argc, char **argv)
  
     if( argc < 3  || argc > 3 || !strcmp(argv[1], "-?") )
     {
-        (void)printf("hint: nweb Port-Number Top-Directory\t\tversion %d\n\n"
-        "\tnweb is a small and very safe mini web server\n"
-        "\tnweb only servers out file/web pages with extensions named below\n"
-        "\t and only from the named directory or its sub-directories.\n"
-        "\tThere is no fancy features = safe and secure.\n\n"
-        "\tExample: nweb 8080 /home/nwebdir &\n\n"
-        "\tOnly Supports:", VERSION);
+        logger(LOG,"hint: nweb Port-Number Top-Directory\t\tversion %d\n\n"
+                   "\tnweb is a small and very safe mini web server\n"
+                   "\tnweb only servers out file/web pages with extensions named below\n"
+                   "\t and only from the named directory or its sub-directories.\n"
+                   "\tThere is no fancy features = safe and secure.\n\n"
+                   "\tExample: nweb 8080 /home/nwebdir &\n\n"
+                   "\tOnly Supports:", std::to_string(VERSION), hit);
 
         for(i=0; !extensions[i].ext.empty(); i++)
             (void)printf(" %s",extensions[i].ext.c_str());
@@ -251,13 +250,13 @@ int main(int argc, char **argv)
         !strncmp(&rootDirChr,"/tmp",5 ) || !strncmp(&rootDirChr,"/usr", 5 ) ||
         !strncmp(&rootDirChr,"/dev",5 ) || !strncmp(&rootDirChr,"/sbin",6) )
     {
-        (void)printf("ERROR: Bad top directory %s, see nweb -?\n",&rootDirChr);
+        logger(LOG,"ERROR: Bad top directory %s, see nweb -?\n",&rootDirChr,hit);
         exit(3);
     }
 
     if(chdir(&rootDirChr) == -1)
     {
-        (void)printf("ERROR: Can't Change to directory %s\n",&rootDirChr);
+        logger(LOG,"ERROR: Can't Change to directory %s\n",&rootDirChr,hit);
         exit(4);
     }
 
