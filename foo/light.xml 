@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <documnet>
-	<version>8888</version>
+	<version>8</version>
 	<name>Light</name>
 	<sources>
 		<hillshading>
@@ -32,39 +32,39 @@
 	</layout>
 	<paint>
 		<raster-opacity>
-			<base>0.900000</base>
-			<stops>3333</stops>
-			<stops>0000</stops>
-			<stops>5555</stops>
-			<stops>0.500000</stops>
-			<stops>6666</stops>
-			<stops>0.700000</stops>
-			<stops>7777</stops>
-			<stops>0000</stops>
+			<base>0.9</base>
+			<stops>3</stops>
+			<stops>0</stops>
+			<stops>5</stops>
+			<stops>0.5</stops>
+			<stops>6</stops>
+			<stops>0.7</stops>
+			<stops>7</stops>
+			<stops>0</stops>
 		</raster-opacity>
-		<raster-fade-duration>300300300300</raster-fade-duration>
-		<raster-contrast>0000</raster-contrast>
+		<raster-fade-duration>300</raster-fade-duration>
+		<raster-contrast>0</raster-contrast>
 	</paint>
 	<id>elevation</id>
 	<type>symbol</type>
 	<metadata/>
 	<source>contours</source>
 	<source-layer>isoline</source-layer>
-	<minzoom>12121212</minzoom>
+	<minzoom>12</minzoom>
 	<true/>
 	<layout>
 		<text-size>
-			<base>1111</base>
-			<stops>10101010</stops>
-			<stops>9.500000</stops>
-			<stops>15151515</stops>
-			<stops>12121212</stops>
+			<base>1</base>
+			<stops>10</stops>
+			<stops>9.5</stops>
+			<stops>15</stops>
+			<stops>12</stops>
 		</text-size>
 		<false/>
 		<true/>
 		<false/>
 		<symbol-placement>line</symbol-placement>
-		<text-padding>10101010</text-padding>
+		<text-padding>10</text-padding>
 		<text-rotation-alignment>map</text-rotation-alignment>
 		<text-field>{elevation} m</text-field>
 		<text-font>Open Sans Semibold</text-font>
@@ -72,20 +72,20 @@
 	<paint>
 		<text-color>hsl(0, 0%, 37%)</text-color>
 		<text-halo-color>hsla(0, 0%, 100%, 0.5)</text-halo-color>
-		<text-halo-width>1.500000</text-halo-width>
+		<text-halo-width>1.5</text-halo-width>
 	</paint>
 	<id>isoline</id>
 	<type>line</type>
 	<source>contours</source>
 	<source-layer>isoline</source-layer>
 	<true/>
-	<minzoom>12121212</minzoom>
+	<minzoom>12</minzoom>
 	<layout>
 		<visibility>visible</visibility>
 	</layout>
 	<paint>
 		<line-color>hsl(0, 1%, 58%)</line-color>
-		<line-width>1.100000</line-width>
+		<line-width>1.1</line-width>
 	</paint>
 	<id>landuse_overlay_national_park</id>
 	<type>fill</type>
@@ -96,7 +96,7 @@
 	<filter>national_park</filter>
 	<paint>
 		<fill-color>#d8e8c8</fill-color>
-		<fill-opacity>0.750000</fill-opacity>
+		<fill-opacity>0.75</fill-opacity>
 	</paint>
 	<metadata>
 		<mapbox_group>1444849388993.3071</mapbox_group>
@@ -167,7 +167,7 @@
 	<filter>wood</filter>
 	<paint>
 		<fill-color>#6a4</fill-color>
-		<fill-opacity>0.100000</fill-opacity>
+		<fill-opacity>0.1</fill-opacity>
 	</paint>
 	<true/>
 	<true/>
@@ -190,11 +190,11 @@
 	<paint>
 		<line-color>#a0c8f0</line-color>
 		<line-width>
-			<base>1.300000</base>
-			<stops>13131313</stops>
-			<stops>0.500000</stops>
-			<stops>20202020</stops>
-			<stops>2222</stops>
+			<base>1.3</base>
+			<stops>13</stops>
+			<stops>0.5</stops>
+			<stops>20</stops>
+			<stops>2</stops>
 		</line-width>
 	</paint>
 	<source-layer>waterway</source-layer>
@@ -211,11 +211,11 @@
 	<paint>
 		<line-color>#a0c8f0</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>11111111</stops>
-			<stops>0.500000</stops>
-			<stops>20202020</stops>
-			<stops>6666</stops>
+			<base>1.2</base>
+			<stops>11</stops>
+			<stops>0.5</stops>
+			<stops>20</stops>
+			<stops>6</stops>
 		</line-width>
 	</paint>
 	<source-layer>waterway</source-layer>
@@ -233,11 +233,11 @@
 	<paint>
 		<line-color>#a0c8f0</line-color>
 		<line-width>
-			<base>1.300000</base>
-			<stops>13131313</stops>
-			<stops>0.500000</stops>
-			<stops>20202020</stops>
-			<stops>6666</stops>
+			<base>1.3</base>
+			<stops>13</stops>
+			<stops>0.5</stops>
+			<stops>20</stops>
+			<stops>6</stops>
 		</line-width>
 	</paint>
 	<source-layer>waterway</source-layer>
@@ -252,14 +252,14 @@
 	<id>water_offset</id>
 	<paint>
 		<fill-color>white</fill-color>
-		<fill-opacity>0.300000</fill-opacity>
-		<fill-translate>0000</fill-translate>
-		<fill-translate>2.500000</fill-translate>
+		<fill-opacity>0.3</fill-opacity>
+		<fill-translate>0</fill-translate>
+		<fill-translate>2.5</fill-translate>
 	</paint>
 	<true/>
 	<ref>water</ref>
 	<true/>
-	<minzoom>11111111</minzoom>
+	<minzoom>11</minzoom>
 	<filter>==</filter>
 	<filter>$type</filter>
 	<filter>Polygon</filter>
@@ -268,11 +268,11 @@
 	<id>aeroway_fill</id>
 	<paint>
 		<fill-color>#f0ede9</fill-color>
-		<fill-opacity>0.700000</fill-opacity>
+		<fill-opacity>0.7</fill-opacity>
 	</paint>
 	<source-layer>aeroway</source-layer>
 	<true/>
-	<minzoom>11111111</minzoom>
+	<minzoom>11</minzoom>
 	<filter>all</filter>
 	<filter>==</filter>
 	<filter>$type</filter>
@@ -286,16 +286,16 @@
 	<paint>
 		<line-color>#f0ede9</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>11111111</stops>
-			<stops>3333</stops>
-			<stops>20202020</stops>
-			<stops>16161616</stops>
+			<base>1.2</base>
+			<stops>11</stops>
+			<stops>3</stops>
+			<stops>20</stops>
+			<stops>16</stops>
 		</line-width>
 	</paint>
 	<source-layer>aeroway</source-layer>
 	<true/>
-	<minzoom>11111111</minzoom>
+	<minzoom>11</minzoom>
 	<filter>all</filter>
 	<filter>==</filter>
 	<filter>$type</filter>
@@ -309,11 +309,11 @@
 	<paint>
 		<line-color>#f0ede9</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>11111111</stops>
-			<stops>0.500000</stops>
-			<stops>20202020</stops>
-			<stops>6666</stops>
+			<base>1.2</base>
+			<stops>11</stops>
+			<stops>0.5</stops>
+			<stops>20</stops>
+			<stops>6</stops>
 		</line-width>
 	</paint>
 	<source-layer>aeroway</source-layer>
@@ -323,10 +323,10 @@
 	<source-layer>building</source-layer>
 	<paint>
 		<fill-color>
-			<base>1111</base>
-			<stops>15.500000</stops>
+			<base>1</base>
+			<stops>15.5</stops>
 			<stops>#f2eae2</stops>
-			<stops>16161616</stops>
+			<stops>16</stops>
 			<stops>#dfdbd7</stops>
 		</fill-color>
 	</paint>
@@ -335,38 +335,38 @@
 	<type>symbol</type>
 	<source>openmaptiles</source>
 	<source-layer>housenum_label</source-layer>
-	<minzoom>15151515</minzoom>
+	<minzoom>15</minzoom>
 	<filter>==</filter>
 	<filter>$type</filter>
 	<filter>Point</filter>
 	<layout>
 		<text-field>{name}</text-field>
-		<text-size>10101010</text-size>
+		<text-size>10</text-size>
 		<text-font>Open Sans Semibold</text-font>
 	</layout>
 	<paint>
 		<text-color>hsla(0, 14%, 57%, 0.51)</text-color>
 		<text-halo-color>hsl(39, 41%, 86%)</text-halo-color>
-		<text-halo-width>0.500000</text-halo-width>
+		<text-halo-width>0.5</text-halo-width>
 	</paint>
 	<id>building_top</id>
 	<paint>
 		<fill-color>#f2eae2</fill-color>
 		<fill-opacity>
-			<base>1111</base>
-			<stops>15151515</stops>
-			<stops>0000</stops>
-			<stops>16161616</stops>
-			<stops>1111</stops>
+			<base>1</base>
+			<stops>15</stops>
+			<stops>0</stops>
+			<stops>16</stops>
+			<stops>1</stops>
 		</fill-opacity>
 		<fill-translate>
-			<stops>15151515</stops>
-			<stops>0000</stops>
-			<stops>0000</stops>
-			<stops>16161616</stops>
-			<stops>-2-2</stops>
-			<stops>-2-2</stops>
-			<base>1111</base>
+			<stops>15</stops>
+			<stops>0</stops>
+			<stops>0</stops>
+			<stops>16</stops>
+			<stops>-2</stops>
+			<stops>-2</stops>
+			<base>1</base>
 		</fill-translate>
 		<fill-outline-color>#dfdbd7</fill-outline-color>
 	</paint>
@@ -389,20 +389,20 @@
 	<id>tunnel_motorway_link_casing</id>
 	<paint>
 		<line-color>#e9ac77</line-color>
-		<line-dasharray>0.500000</line-dasharray>
-		<line-dasharray>0.250000</line-dasharray>
+		<line-dasharray>0.5</line-dasharray>
+		<line-dasharray>0.25</line-dasharray>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12121212</stops>
-			<stops>1111</stops>
-			<stops>13131313</stops>
-			<stops>3333</stops>
-			<stops>14141414</stops>
-			<stops>4444</stops>
-			<stops>20202020</stops>
-			<stops>15151515</stops>
+			<base>1.2</base>
+			<stops>12</stops>
+			<stops>1</stops>
+			<stops>13</stops>
+			<stops>3</stops>
+			<stops>14</stops>
+			<stops>4</stops>
+			<stops>20</stops>
+			<stops>15</stops>
 		</line-width>
-		<line-opacity>1111</line-opacity>
+		<line-opacity>1</line-opacity>
 	</paint>
 	<source-layer>road</source-layer>
 	<true/>
@@ -425,16 +425,16 @@
 	<id>tunnel_service_track_casing</id>
 	<paint>
 		<line-color>#cfcdca</line-color>
-		<line-dasharray>0.500000</line-dasharray>
-		<line-dasharray>0.250000</line-dasharray>
+		<line-dasharray>0.5</line-dasharray>
+		<line-dasharray>0.25</line-dasharray>
 		<line-width>
-			<base>1.200000</base>
-			<stops>15151515</stops>
-			<stops>1111</stops>
-			<stops>16161616</stops>
-			<stops>4444</stops>
-			<stops>20202020</stops>
-			<stops>11111111</stops>
+			<base>1.2</base>
+			<stops>15</stops>
+			<stops>1</stops>
+			<stops>16</stops>
+			<stops>4</stops>
+			<stops>20</stops>
+			<stops>11</stops>
 		</line-width>
 	</paint>
 	<source-layer>road</source-layer>
@@ -455,17 +455,17 @@
 	<paint>
 		<line-color>#e9ac77</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12121212</stops>
-			<stops>1111</stops>
-			<stops>13131313</stops>
-			<stops>3333</stops>
-			<stops>14141414</stops>
-			<stops>4444</stops>
-			<stops>20202020</stops>
-			<stops>15151515</stops>
+			<base>1.2</base>
+			<stops>12</stops>
+			<stops>1</stops>
+			<stops>13</stops>
+			<stops>3</stops>
+			<stops>14</stops>
+			<stops>4</stops>
+			<stops>20</stops>
+			<stops>15</stops>
 		</line-width>
-		<line-opacity>1111</line-opacity>
+		<line-opacity>1</line-opacity>
 	</paint>
 	<source-layer>road</source-layer>
 	<true/>
@@ -486,21 +486,21 @@
 	<paint>
 		<line-color>#cfcdca</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12121212</stops>
-			<stops>0.500000</stops>
-			<stops>13131313</stops>
-			<stops>1111</stops>
-			<stops>14141414</stops>
-			<stops>4444</stops>
-			<stops>20202020</stops>
-			<stops>15151515</stops>
+			<base>1.2</base>
+			<stops>12</stops>
+			<stops>0.5</stops>
+			<stops>13</stops>
+			<stops>1</stops>
+			<stops>14</stops>
+			<stops>4</stops>
+			<stops>20</stops>
+			<stops>15</stops>
 		</line-width>
 		<line-opacity>
-			<stops>12121212</stops>
-			<stops>0000</stops>
-			<stops>12.500000</stops>
-			<stops>1111</stops>
+			<stops>12</stops>
+			<stops>0</stops>
+			<stops>12.5</stops>
+			<stops>1</stops>
 		</line-opacity>
 	</paint>
 	<source-layer>road</source-layer>
@@ -522,13 +522,13 @@
 	<paint>
 		<line-color>#e9ac77</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>8888</stops>
-			<stops>1.500000</stops>
-			<stops>20202020</stops>
-			<stops>17171717</stops>
+			<base>1.2</base>
+			<stops>8</stops>
+			<stops>1.5</stops>
+			<stops>20</stops>
+			<stops>17</stops>
 		</line-width>
-		<line-opacity>1111</line-opacity>
+		<line-opacity>1</line-opacity>
 	</paint>
 	<source-layer>road</source-layer>
 	<true/>
@@ -549,15 +549,15 @@
 	<paint>
 		<line-color>#e9ac77</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>5555</stops>
-			<stops>0.400000</stops>
-			<stops>6666</stops>
-			<stops>0.600000</stops>
-			<stops>7777</stops>
-			<stops>1.500000</stops>
-			<stops>20202020</stops>
-			<stops>22222222</stops>
+			<base>1.2</base>
+			<stops>5</stops>
+			<stops>0.4</stops>
+			<stops>6</stops>
+			<stops>0.6</stops>
+			<stops>7</stops>
+			<stops>1.5</stops>
+			<stops>20</stops>
+			<stops>22</stops>
 		</line-width>
 	</paint>
 	<source-layer>road</source-layer>
@@ -578,18 +578,18 @@
 	<id>tunnel_motorway_casing</id>
 	<paint>
 		<line-color>#e9ac77</line-color>
-		<line-dasharray>0.500000</line-dasharray>
-		<line-dasharray>0.250000</line-dasharray>
+		<line-dasharray>0.5</line-dasharray>
+		<line-dasharray>0.25</line-dasharray>
 		<line-width>
-			<base>1.200000</base>
-			<stops>5555</stops>
-			<stops>0.400000</stops>
-			<stops>6666</stops>
-			<stops>0.600000</stops>
-			<stops>7777</stops>
-			<stops>1.500000</stops>
-			<stops>20202020</stops>
-			<stops>22222222</stops>
+			<base>1.2</base>
+			<stops>5</stops>
+			<stops>0.4</stops>
+			<stops>6</stops>
+			<stops>0.6</stops>
+			<stops>7</stops>
+			<stops>1.5</stops>
+			<stops>20</stops>
+			<stops>22</stops>
 		</line-width>
 	</paint>
 	<source-layer>road</source-layer>
@@ -611,14 +611,14 @@
 	<filter>pedestrian</filter>
 	<paint>
 		<line-color>#cba</line-color>
-		<line-dasharray>1.500000</line-dasharray>
-		<line-dasharray>0.750000</line-dasharray>
+		<line-dasharray>1.5</line-dasharray>
+		<line-dasharray>0.75</line-dasharray>
 		<line-width>
-			<base>1.200000</base>
-			<stops>15151515</stops>
-			<stops>1.200000</stops>
-			<stops>20202020</stops>
-			<stops>4444</stops>
+			<base>1.2</base>
+			<stops>15</stops>
+			<stops>1.2</stops>
+			<stops>20</stops>
+			<stops>4</stops>
 		</line-width>
 	</paint>
 	<metadata>
@@ -633,15 +633,15 @@
 	<paint>
 		<line-color>#fc8</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12.500000</stops>
-			<stops>0000</stops>
-			<stops>13131313</stops>
-			<stops>1.500000</stops>
-			<stops>14141414</stops>
-			<stops>2.500000</stops>
-			<stops>20202020</stops>
-			<stops>11.500000</stops>
+			<base>1.2</base>
+			<stops>12.5</stops>
+			<stops>0</stops>
+			<stops>13</stops>
+			<stops>1.5</stops>
+			<stops>14</stops>
+			<stops>2.5</stops>
+			<stops>20</stops>
+			<stops>11.5</stops>
 		</line-width>
 	</paint>
 	<ref>tunnel_motorway_link_casing</ref>
@@ -653,13 +653,13 @@
 	<paint>
 		<line-color>#fff</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>15.500000</stops>
-			<stops>0000</stops>
-			<stops>16161616</stops>
-			<stops>2222</stops>
-			<stops>20202020</stops>
-			<stops>7.500000</stops>
+			<base>1.2</base>
+			<stops>15.5</stops>
+			<stops>0</stops>
+			<stops>16</stops>
+			<stops>2</stops>
+			<stops>20</stops>
+			<stops>7.5</stops>
 		</line-width>
 	</paint>
 	<ref>tunnel_service_track_casing</ref>
@@ -671,15 +671,15 @@
 	<paint>
 		<line-color>#fff4c6</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12.500000</stops>
-			<stops>0000</stops>
-			<stops>13131313</stops>
-			<stops>1.500000</stops>
-			<stops>14141414</stops>
-			<stops>2.500000</stops>
-			<stops>20202020</stops>
-			<stops>11.500000</stops>
+			<base>1.2</base>
+			<stops>12.5</stops>
+			<stops>0</stops>
+			<stops>13</stops>
+			<stops>1.5</stops>
+			<stops>14</stops>
+			<stops>2.5</stops>
+			<stops>20</stops>
+			<stops>11.5</stops>
 		</line-width>
 	</paint>
 	<ref>tunnel_link_casing</ref>
@@ -691,15 +691,15 @@
 	<paint>
 		<line-color>#fff</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>13.500000</stops>
-			<stops>0000</stops>
-			<stops>14141414</stops>
-			<stops>2.500000</stops>
-			<stops>20202020</stops>
-			<stops>11.500000</stops>
+			<base>1.2</base>
+			<stops>13.5</stops>
+			<stops>0</stops>
+			<stops>14</stops>
+			<stops>2.5</stops>
+			<stops>20</stops>
+			<stops>11.5</stops>
 		</line-width>
-		<line-opacity>1111</line-opacity>
+		<line-opacity>1</line-opacity>
 	</paint>
 	<ref>tunnel_street_casing</ref>
 	<true/>
@@ -710,13 +710,13 @@
 	<paint>
 		<line-color>#fff4c6</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>6.500000</stops>
-			<stops>0000</stops>
-			<stops>7777</stops>
-			<stops>0.500000</stops>
-			<stops>20202020</stops>
-			<stops>10101010</stops>
+			<base>1.2</base>
+			<stops>6.5</stops>
+			<stops>0</stops>
+			<stops>7</stops>
+			<stops>0.5</stops>
+			<stops>20</stops>
+			<stops>10</stops>
 		</line-width>
 	</paint>
 	<ref>tunnel_secondary_tertiary_casing</ref>
@@ -728,13 +728,13 @@
 	<paint>
 		<line-color>#fff4c6</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>6.500000</stops>
-			<stops>0000</stops>
-			<stops>7777</stops>
-			<stops>0.500000</stops>
-			<stops>20202020</stops>
-			<stops>18181818</stops>
+			<base>1.2</base>
+			<stops>6.5</stops>
+			<stops>0</stops>
+			<stops>7</stops>
+			<stops>0.5</stops>
+			<stops>20</stops>
+			<stops>18</stops>
 		</line-width>
 	</paint>
 	<ref>tunnel_trunk_primary_casing</ref>
@@ -746,13 +746,13 @@
 	<paint>
 		<line-color>#ffdaa6</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>6.500000</stops>
-			<stops>0000</stops>
-			<stops>7777</stops>
-			<stops>0.500000</stops>
-			<stops>20202020</stops>
-			<stops>18181818</stops>
+			<base>1.2</base>
+			<stops>6.5</stops>
+			<stops>0</stops>
+			<stops>7</stops>
+			<stops>0.5</stops>
+			<stops>20</stops>
+			<stops>18</stops>
 		</line-width>
 	</paint>
 	<ref>tunnel_motorway_casing</ref>
@@ -771,13 +771,13 @@
 	<paint>
 		<line-color>#bbb</line-color>
 		<line-width>
-			<base>1.400000</base>
-			<stops>14141414</stops>
-			<stops>0.400000</stops>
-			<stops>15151515</stops>
-			<stops>0.750000</stops>
-			<stops>20202020</stops>
-			<stops>2222</stops>
+			<base>1.4</base>
+			<stops>14</stops>
+			<stops>0.4</stops>
+			<stops>15</stops>
+			<stops>0.75</stops>
+			<stops>20</stops>
+			<stops>2</stops>
 		</line-width>
 	</paint>
 	<metadata>
@@ -787,16 +787,16 @@
 	<id>tunnel_major_rail_hatching</id>
 	<paint>
 		<line-color>#bbb</line-color>
-		<line-dasharray>0.200000</line-dasharray>
-		<line-dasharray>8888</line-dasharray>
+		<line-dasharray>0.2</line-dasharray>
+		<line-dasharray>8</line-dasharray>
 		<line-width>
-			<base>1.400000</base>
-			<stops>14.500000</stops>
-			<stops>0000</stops>
-			<stops>15151515</stops>
-			<stops>3333</stops>
-			<stops>20202020</stops>
-			<stops>8888</stops>
+			<base>1.4</base>
+			<stops>14.5</stops>
+			<stops>0</stops>
+			<stops>15</stops>
+			<stops>3</stops>
+			<stops>20</stops>
+			<stops>8</stops>
 		</line-width>
 	</paint>
 	<metadata>
@@ -805,7 +805,7 @@
 	<true/>
 	<ref>tunnel_major_rail</ref>
 	<true/>
-	<minzoom>12121212</minzoom>
+	<minzoom>12</minzoom>
 	<layout>
 		<line-cap>round</line-cap>
 		<line-join>round</line-join>
@@ -827,17 +827,17 @@
 	<paint>
 		<line-color>#e9ac77</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12121212</stops>
-			<stops>1111</stops>
-			<stops>13131313</stops>
-			<stops>3333</stops>
-			<stops>14141414</stops>
-			<stops>4444</stops>
-			<stops>20202020</stops>
-			<stops>15151515</stops>
+			<base>1.2</base>
+			<stops>12</stops>
+			<stops>1</stops>
+			<stops>13</stops>
+			<stops>3</stops>
+			<stops>14</stops>
+			<stops>4</stops>
+			<stops>20</stops>
+			<stops>15</stops>
 		</line-width>
-		<line-opacity>1111</line-opacity>
+		<line-opacity>1</line-opacity>
 	</paint>
 	<source-layer>road</source-layer>
 	<true/>
@@ -863,18 +863,18 @@
 	<paint>
 		<line-color>#cfcdca</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>15151515</stops>
-			<stops>1111</stops>
-			<stops>16161616</stops>
-			<stops>4444</stops>
-			<stops>20202020</stops>
-			<stops>11111111</stops>
+			<base>1.2</base>
+			<stops>15</stops>
+			<stops>1</stops>
+			<stops>16</stops>
+			<stops>4</stops>
+			<stops>20</stops>
+			<stops>11</stops>
 		</line-width>
 	</paint>
 	<source-layer>road</source-layer>
 	<true/>
-	<minzoom>13131313</minzoom>
+	<minzoom>13</minzoom>
 	<layout>
 		<line-cap>round</line-cap>
 		<line-join>round</line-join>
@@ -897,17 +897,17 @@
 	<paint>
 		<line-color>#e9ac77</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12121212</stops>
-			<stops>1111</stops>
-			<stops>13131313</stops>
-			<stops>3333</stops>
-			<stops>14141414</stops>
-			<stops>4444</stops>
-			<stops>20202020</stops>
-			<stops>15151515</stops>
+			<base>1.2</base>
+			<stops>12</stops>
+			<stops>1</stops>
+			<stops>13</stops>
+			<stops>3</stops>
+			<stops>14</stops>
+			<stops>4</stops>
+			<stops>20</stops>
+			<stops>15</stops>
 		</line-width>
-		<line-opacity>1111</line-opacity>
+		<line-opacity>1</line-opacity>
 	</paint>
 	<source-layer>road</source-layer>
 	<true/>
@@ -937,21 +937,21 @@
 	<paint>
 		<line-color>#cfcdca</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12121212</stops>
-			<stops>0.500000</stops>
-			<stops>13131313</stops>
-			<stops>1111</stops>
-			<stops>14141414</stops>
-			<stops>4444</stops>
-			<stops>20202020</stops>
-			<stops>15151515</stops>
+			<base>1.2</base>
+			<stops>12</stops>
+			<stops>0.5</stops>
+			<stops>13</stops>
+			<stops>1</stops>
+			<stops>14</stops>
+			<stops>4</stops>
+			<stops>20</stops>
+			<stops>15</stops>
 		</line-width>
 		<line-opacity>
-			<stops>12121212</stops>
-			<stops>0000</stops>
-			<stops>12.500000</stops>
-			<stops>1111</stops>
+			<stops>12</stops>
+			<stops>0</stops>
+			<stops>12.5</stops>
+			<stops>1</stops>
 		</line-opacity>
 	</paint>
 	<source-layer>road</source-layer>
@@ -979,13 +979,13 @@
 	<paint>
 		<line-color>#e9ac77</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>8888</stops>
-			<stops>1.500000</stops>
-			<stops>20202020</stops>
-			<stops>17171717</stops>
+			<base>1.2</base>
+			<stops>8</stops>
+			<stops>1.5</stops>
+			<stops>20</stops>
+			<stops>17</stops>
 		</line-width>
-		<line-opacity>1111</line-opacity>
+		<line-opacity>1</line-opacity>
 	</paint>
 	<source-layer>road</source-layer>
 	<true/>
@@ -1012,21 +1012,21 @@
 	<paint>
 		<line-color>#e9ac77</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>5555</stops>
-			<stops>0.400000</stops>
-			<stops>6666</stops>
-			<stops>0.600000</stops>
-			<stops>7777</stops>
-			<stops>1.500000</stops>
-			<stops>20202020</stops>
-			<stops>22222222</stops>
+			<base>1.2</base>
+			<stops>5</stops>
+			<stops>0.4</stops>
+			<stops>6</stops>
+			<stops>0.6</stops>
+			<stops>7</stops>
+			<stops>1.5</stops>
+			<stops>20</stops>
+			<stops>22</stops>
 		</line-width>
-		<line-opacity>1111</line-opacity>
+		<line-opacity>1</line-opacity>
 	</paint>
 	<source-layer>road</source-layer>
 	<true/>
-	<minzoom>5555</minzoom>
+	<minzoom>5</minzoom>
 	<layout>
 		<line-cap>round</line-cap>
 		<line-join>round</line-join>
@@ -1049,15 +1049,15 @@
 	<paint>
 		<line-color>#e9ac77</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>5555</stops>
-			<stops>0.400000</stops>
-			<stops>6666</stops>
-			<stops>0.600000</stops>
-			<stops>7777</stops>
-			<stops>1.500000</stops>
-			<stops>20202020</stops>
-			<stops>22222222</stops>
+			<base>1.2</base>
+			<stops>5</stops>
+			<stops>0.4</stops>
+			<stops>6</stops>
+			<stops>0.6</stops>
+			<stops>7</stops>
+			<stops>1.5</stops>
+			<stops>20</stops>
+			<stops>22</stops>
 		</line-width>
 	</paint>
 	<source-layer>road</source-layer>
@@ -1080,14 +1080,14 @@
 	<filter>tunnel</filter>
 	<paint>
 		<line-color>#cba</line-color>
-		<line-dasharray>1.500000</line-dasharray>
-		<line-dasharray>0.750000</line-dasharray>
+		<line-dasharray>1.5</line-dasharray>
+		<line-dasharray>0.75</line-dasharray>
 		<line-width>
-			<base>1.200000</base>
-			<stops>15151515</stops>
-			<stops>1.200000</stops>
-			<stops>20202020</stops>
-			<stops>4444</stops>
+			<base>1.2</base>
+			<stops>15</stops>
+			<stops>1.2</stops>
+			<stops>20</stops>
+			<stops>4</stops>
 		</line-width>
 	</paint>
 	<metadata>
@@ -1102,15 +1102,15 @@
 	<paint>
 		<line-color>#fc8</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12.500000</stops>
-			<stops>0000</stops>
-			<stops>13131313</stops>
-			<stops>1.500000</stops>
-			<stops>14141414</stops>
-			<stops>2.500000</stops>
-			<stops>20202020</stops>
-			<stops>11.500000</stops>
+			<base>1.2</base>
+			<stops>12.5</stops>
+			<stops>0</stops>
+			<stops>13</stops>
+			<stops>1.5</stops>
+			<stops>14</stops>
+			<stops>2.5</stops>
+			<stops>20</stops>
+			<stops>11.5</stops>
 		</line-width>
 	</paint>
 	<ref>road_motorway_link_casing</ref>
@@ -1122,13 +1122,13 @@
 	<paint>
 		<line-color>#fff</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>15.500000</stops>
-			<stops>0000</stops>
-			<stops>16161616</stops>
-			<stops>2222</stops>
-			<stops>20202020</stops>
-			<stops>7.500000</stops>
+			<base>1.2</base>
+			<stops>15.5</stops>
+			<stops>0</stops>
+			<stops>16</stops>
+			<stops>2</stops>
+			<stops>20</stops>
+			<stops>7.5</stops>
 		</line-width>
 	</paint>
 	<ref>road_service_track_casing</ref>
@@ -1140,15 +1140,15 @@
 	<paint>
 		<line-color>#fea</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12.500000</stops>
-			<stops>0000</stops>
-			<stops>13131313</stops>
-			<stops>1.500000</stops>
-			<stops>14141414</stops>
-			<stops>2.500000</stops>
-			<stops>20202020</stops>
-			<stops>11.500000</stops>
+			<base>1.2</base>
+			<stops>12.5</stops>
+			<stops>0</stops>
+			<stops>13</stops>
+			<stops>1.5</stops>
+			<stops>14</stops>
+			<stops>2.5</stops>
+			<stops>20</stops>
+			<stops>11.5</stops>
 		</line-width>
 	</paint>
 	<ref>road_link_casing</ref>
@@ -1160,15 +1160,15 @@
 	<paint>
 		<line-color>#fff</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>13.500000</stops>
-			<stops>0000</stops>
-			<stops>14141414</stops>
-			<stops>2.500000</stops>
-			<stops>20202020</stops>
-			<stops>11.500000</stops>
+			<base>1.2</base>
+			<stops>13.5</stops>
+			<stops>0</stops>
+			<stops>14</stops>
+			<stops>2.5</stops>
+			<stops>20</stops>
+			<stops>11.5</stops>
 		</line-width>
-		<line-opacity>1111</line-opacity>
+		<line-opacity>1</line-opacity>
 	</paint>
 	<ref>road_street_casing</ref>
 	<true/>
@@ -1179,13 +1179,13 @@
 	<paint>
 		<line-color>#fea</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>6.500000</stops>
-			<stops>0000</stops>
-			<stops>8888</stops>
-			<stops>0.500000</stops>
-			<stops>20202020</stops>
-			<stops>13131313</stops>
+			<base>1.2</base>
+			<stops>6.5</stops>
+			<stops>0</stops>
+			<stops>8</stops>
+			<stops>0.5</stops>
+			<stops>20</stops>
+			<stops>13</stops>
 		</line-width>
 	</paint>
 	<ref>road_secondary_tertiary_casing</ref>
@@ -1197,13 +1197,13 @@
 	<paint>
 		<line-color>#fea</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>6.500000</stops>
-			<stops>0000</stops>
-			<stops>7777</stops>
-			<stops>0.500000</stops>
-			<stops>20202020</stops>
-			<stops>18181818</stops>
+			<base>1.2</base>
+			<stops>6.5</stops>
+			<stops>0</stops>
+			<stops>7</stops>
+			<stops>0.5</stops>
+			<stops>20</stops>
+			<stops>18</stops>
 		</line-width>
 	</paint>
 	<ref>road_trunk_primary_casing</ref>
@@ -1215,13 +1215,13 @@
 	<paint>
 		<line-color>#fc8</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>6.500000</stops>
-			<stops>0000</stops>
-			<stops>7777</stops>
-			<stops>0.500000</stops>
-			<stops>20202020</stops>
-			<stops>18181818</stops>
+			<base>1.2</base>
+			<stops>6.5</stops>
+			<stops>0</stops>
+			<stops>7</stops>
+			<stops>0.5</stops>
+			<stops>20</stops>
+			<stops>18</stops>
 		</line-width>
 	</paint>
 	<ref>road_motorway_casing</ref>
@@ -1240,13 +1240,13 @@
 	<paint>
 		<line-color>#bbb</line-color>
 		<line-width>
-			<base>1.400000</base>
-			<stops>14141414</stops>
-			<stops>0.400000</stops>
-			<stops>15151515</stops>
-			<stops>0.750000</stops>
-			<stops>20202020</stops>
-			<stops>2222</stops>
+			<base>1.4</base>
+			<stops>14</stops>
+			<stops>0.4</stops>
+			<stops>15</stops>
+			<stops>0.75</stops>
+			<stops>20</stops>
+			<stops>2</stops>
 		</line-width>
 	</paint>
 	<metadata>
@@ -1256,16 +1256,16 @@
 	<id>road_major_rail_hatching</id>
 	<paint>
 		<line-color>#bbb</line-color>
-		<line-dasharray>0.200000</line-dasharray>
-		<line-dasharray>8888</line-dasharray>
+		<line-dasharray>0.2</line-dasharray>
+		<line-dasharray>8</line-dasharray>
 		<line-width>
-			<base>1.400000</base>
-			<stops>14.500000</stops>
-			<stops>0000</stops>
-			<stops>15151515</stops>
-			<stops>3333</stops>
-			<stops>20202020</stops>
-			<stops>8888</stops>
+			<base>1.4</base>
+			<stops>14.5</stops>
+			<stops>0</stops>
+			<stops>15</stops>
+			<stops>3</stops>
+			<stops>20</stops>
+			<stops>8</stops>
 		</line-width>
 	</paint>
 	<metadata>
@@ -1293,17 +1293,17 @@
 	<paint>
 		<line-color>#e9ac77</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12121212</stops>
-			<stops>1111</stops>
-			<stops>13131313</stops>
-			<stops>3333</stops>
-			<stops>14141414</stops>
-			<stops>4444</stops>
-			<stops>20202020</stops>
-			<stops>15151515</stops>
+			<base>1.2</base>
+			<stops>12</stops>
+			<stops>1</stops>
+			<stops>13</stops>
+			<stops>3</stops>
+			<stops>14</stops>
+			<stops>4</stops>
+			<stops>20</stops>
+			<stops>15</stops>
 		</line-width>
-		<line-opacity>1111</line-opacity>
+		<line-opacity>1</line-opacity>
 	</paint>
 	<source-layer>road</source-layer>
 	<true/>
@@ -1327,13 +1327,13 @@
 	<paint>
 		<line-color>#cfcdca</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>15151515</stops>
-			<stops>1111</stops>
-			<stops>16161616</stops>
-			<stops>4444</stops>
-			<stops>20202020</stops>
-			<stops>11111111</stops>
+			<base>1.2</base>
+			<stops>15</stops>
+			<stops>1</stops>
+			<stops>16</stops>
+			<stops>4</stops>
+			<stops>20</stops>
+			<stops>11</stops>
 		</line-width>
 	</paint>
 	<source-layer>road</source-layer>
@@ -1357,17 +1357,17 @@
 	<paint>
 		<line-color>#e9ac77</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12121212</stops>
-			<stops>1111</stops>
-			<stops>13131313</stops>
-			<stops>3333</stops>
-			<stops>14141414</stops>
-			<stops>4444</stops>
-			<stops>20202020</stops>
-			<stops>15151515</stops>
+			<base>1.2</base>
+			<stops>12</stops>
+			<stops>1</stops>
+			<stops>13</stops>
+			<stops>3</stops>
+			<stops>14</stops>
+			<stops>4</stops>
+			<stops>20</stops>
+			<stops>15</stops>
 		</line-width>
-		<line-opacity>1111</line-opacity>
+		<line-opacity>1</line-opacity>
 	</paint>
 	<source-layer>road</source-layer>
 	<true/>
@@ -1391,21 +1391,21 @@
 	<paint>
 		<line-color>#cfcdca</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12121212</stops>
-			<stops>0.500000</stops>
-			<stops>13131313</stops>
-			<stops>1111</stops>
-			<stops>14141414</stops>
-			<stops>4444</stops>
-			<stops>20202020</stops>
-			<stops>15151515</stops>
+			<base>1.2</base>
+			<stops>12</stops>
+			<stops>0.5</stops>
+			<stops>13</stops>
+			<stops>1</stops>
+			<stops>14</stops>
+			<stops>4</stops>
+			<stops>20</stops>
+			<stops>15</stops>
 		</line-width>
 		<line-opacity>
-			<stops>12121212</stops>
-			<stops>0000</stops>
-			<stops>12.500000</stops>
-			<stops>1111</stops>
+			<stops>12</stops>
+			<stops>0</stops>
+			<stops>12.5</stops>
+			<stops>1</stops>
 		</line-opacity>
 	</paint>
 	<source-layer>road</source-layer>
@@ -1430,13 +1430,13 @@
 	<paint>
 		<line-color>#e9ac77</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>8888</stops>
-			<stops>1.500000</stops>
-			<stops>20202020</stops>
-			<stops>17171717</stops>
+			<base>1.2</base>
+			<stops>8</stops>
+			<stops>1.5</stops>
+			<stops>20</stops>
+			<stops>17</stops>
 		</line-width>
-		<line-opacity>1111</line-opacity>
+		<line-opacity>1</line-opacity>
 	</paint>
 	<source-layer>road</source-layer>
 	<true/>
@@ -1460,15 +1460,15 @@
 	<paint>
 		<line-color>#e9ac77</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>5555</stops>
-			<stops>0.400000</stops>
-			<stops>6666</stops>
-			<stops>0.600000</stops>
-			<stops>7777</stops>
-			<stops>1.500000</stops>
-			<stops>20202020</stops>
-			<stops>22222222</stops>
+			<base>1.2</base>
+			<stops>5</stops>
+			<stops>0.4</stops>
+			<stops>6</stops>
+			<stops>0.6</stops>
+			<stops>7</stops>
+			<stops>1.5</stops>
+			<stops>20</stops>
+			<stops>22</stops>
 		</line-width>
 	</paint>
 	<source-layer>road</source-layer>
@@ -1492,15 +1492,15 @@
 	<paint>
 		<line-color>#e9ac77</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>5555</stops>
-			<stops>0.400000</stops>
-			<stops>6666</stops>
-			<stops>0.600000</stops>
-			<stops>7777</stops>
-			<stops>1.500000</stops>
-			<stops>20202020</stops>
-			<stops>22222222</stops>
+			<base>1.2</base>
+			<stops>5</stops>
+			<stops>0.4</stops>
+			<stops>6</stops>
+			<stops>0.6</stops>
+			<stops>7</stops>
+			<stops>1.5</stops>
+			<stops>20</stops>
+			<stops>22</stops>
 		</line-width>
 	</paint>
 	<source-layer>road</source-layer>
@@ -1522,14 +1522,14 @@
 	<filter>pedestrian</filter>
 	<paint>
 		<line-color>#cba</line-color>
-		<line-dasharray>1.500000</line-dasharray>
-		<line-dasharray>0.750000</line-dasharray>
+		<line-dasharray>1.5</line-dasharray>
+		<line-dasharray>0.75</line-dasharray>
 		<line-width>
-			<base>1.200000</base>
-			<stops>15151515</stops>
-			<stops>1.200000</stops>
-			<stops>20202020</stops>
-			<stops>4444</stops>
+			<base>1.2</base>
+			<stops>15</stops>
+			<stops>1.2</stops>
+			<stops>20</stops>
+			<stops>4</stops>
 		</line-width>
 	</paint>
 	<metadata>
@@ -1544,15 +1544,15 @@
 	<paint>
 		<line-color>#fc8</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12.500000</stops>
-			<stops>0000</stops>
-			<stops>13131313</stops>
-			<stops>1.500000</stops>
-			<stops>14141414</stops>
-			<stops>2.500000</stops>
-			<stops>20202020</stops>
-			<stops>11.500000</stops>
+			<base>1.2</base>
+			<stops>12.5</stops>
+			<stops>0</stops>
+			<stops>13</stops>
+			<stops>1.5</stops>
+			<stops>14</stops>
+			<stops>2.5</stops>
+			<stops>20</stops>
+			<stops>11.5</stops>
 		</line-width>
 	</paint>
 	<ref>bridge_motorway_link_casing</ref>
@@ -1564,13 +1564,13 @@
 	<paint>
 		<line-color>#fff</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>15.500000</stops>
-			<stops>0000</stops>
-			<stops>16161616</stops>
-			<stops>2222</stops>
-			<stops>20202020</stops>
-			<stops>7.500000</stops>
+			<base>1.2</base>
+			<stops>15.5</stops>
+			<stops>0</stops>
+			<stops>16</stops>
+			<stops>2</stops>
+			<stops>20</stops>
+			<stops>7.5</stops>
 		</line-width>
 	</paint>
 	<ref>bridge_service_track_casing</ref>
@@ -1582,15 +1582,15 @@
 	<paint>
 		<line-color>#fea</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>12.500000</stops>
-			<stops>0000</stops>
-			<stops>13131313</stops>
-			<stops>1.500000</stops>
-			<stops>14141414</stops>
-			<stops>2.500000</stops>
-			<stops>20202020</stops>
-			<stops>11.500000</stops>
+			<base>1.2</base>
+			<stops>12.5</stops>
+			<stops>0</stops>
+			<stops>13</stops>
+			<stops>1.5</stops>
+			<stops>14</stops>
+			<stops>2.5</stops>
+			<stops>20</stops>
+			<stops>11.5</stops>
 		</line-width>
 	</paint>
 	<ref>bridge_link_casing</ref>
@@ -1602,15 +1602,15 @@
 	<paint>
 		<line-color>#fff</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>13.500000</stops>
-			<stops>0000</stops>
-			<stops>14141414</stops>
-			<stops>2.500000</stops>
-			<stops>20202020</stops>
-			<stops>11.500000</stops>
+			<base>1.2</base>
+			<stops>13.5</stops>
+			<stops>0</stops>
+			<stops>14</stops>
+			<stops>2.5</stops>
+			<stops>20</stops>
+			<stops>11.5</stops>
 		</line-width>
-		<line-opacity>1111</line-opacity>
+		<line-opacity>1</line-opacity>
 	</paint>
 	<ref>bridge_street_casing</ref>
 	<true/>
@@ -1621,13 +1621,13 @@
 	<paint>
 		<line-color>#fea</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>6.500000</stops>
-			<stops>0000</stops>
-			<stops>7777</stops>
-			<stops>0.500000</stops>
-			<stops>20202020</stops>
-			<stops>10101010</stops>
+			<base>1.2</base>
+			<stops>6.5</stops>
+			<stops>0</stops>
+			<stops>7</stops>
+			<stops>0.5</stops>
+			<stops>20</stops>
+			<stops>10</stops>
 		</line-width>
 	</paint>
 	<ref>bridge_secondary_tertiary_casing</ref>
@@ -1639,13 +1639,13 @@
 	<paint>
 		<line-color>#fea</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>6.500000</stops>
-			<stops>0000</stops>
-			<stops>7777</stops>
-			<stops>0.500000</stops>
-			<stops>20202020</stops>
-			<stops>18181818</stops>
+			<base>1.2</base>
+			<stops>6.5</stops>
+			<stops>0</stops>
+			<stops>7</stops>
+			<stops>0.5</stops>
+			<stops>20</stops>
+			<stops>18</stops>
 		</line-width>
 	</paint>
 	<ref>bridge_trunk_primary_casing</ref>
@@ -1657,13 +1657,13 @@
 	<paint>
 		<line-color>#fc8</line-color>
 		<line-width>
-			<base>1.200000</base>
-			<stops>6.500000</stops>
-			<stops>0000</stops>
-			<stops>7777</stops>
-			<stops>0.500000</stops>
-			<stops>20202020</stops>
-			<stops>18181818</stops>
+			<base>1.2</base>
+			<stops>6.5</stops>
+			<stops>0</stops>
+			<stops>7</stops>
+			<stops>0.5</stops>
+			<stops>20</stops>
+			<stops>18</stops>
 		</line-width>
 	</paint>
 	<ref>bridge_motorway_casing</ref>
@@ -1681,13 +1681,13 @@
 	<paint>
 		<line-color>#bbb</line-color>
 		<line-width>
-			<base>1.400000</base>
-			<stops>14141414</stops>
-			<stops>0.400000</stops>
-			<stops>15151515</stops>
-			<stops>0.750000</stops>
-			<stops>20202020</stops>
-			<stops>2222</stops>
+			<base>1.4</base>
+			<stops>14</stops>
+			<stops>0.4</stops>
+			<stops>15</stops>
+			<stops>0.75</stops>
+			<stops>20</stops>
+			<stops>2</stops>
 		</line-width>
 	</paint>
 	<metadata>
@@ -1697,16 +1697,16 @@
 	<id>bridge_major_rail_hatching</id>
 	<paint>
 		<line-color>#bbb</line-color>
-		<line-dasharray>0.200000</line-dasharray>
-		<line-dasharray>8888</line-dasharray>
+		<line-dasharray>0.2</line-dasharray>
+		<line-dasharray>8</line-dasharray>
 		<line-width>
-			<base>1.400000</base>
-			<stops>14.500000</stops>
-			<stops>0000</stops>
-			<stops>15151515</stops>
-			<stops>3333</stops>
-			<stops>20202020</stops>
-			<stops>8888</stops>
+			<base>1.4</base>
+			<stops>14.5</stops>
+			<stops>0</stops>
+			<stops>15</stops>
+			<stops>3</stops>
+			<stops>20</stops>
+			<stops>8</stops>
 		</line-width>
 	</paint>
 	<metadata>
@@ -1724,27 +1724,27 @@
 	<filter>all</filter>
 	<filter>&gt;=</filter>
 	<filter>admin_level</filter>
-	<filter>3333</filter>
+	<filter>3</filter>
 	<filter>==</filter>
 	<filter>maritime</filter>
-	<filter>0000</filter>
+	<filter>0</filter>
 	<type>line</type>
 	<source>atlas</source>
 	<id>admin_level_3</id>
 	<paint>
 		<line-color>#9e9cab</line-color>
-		<line-dasharray>3333</line-dasharray>
-		<line-dasharray>1111</line-dasharray>
-		<line-dasharray>1111</line-dasharray>
-		<line-dasharray>1111</line-dasharray>
+		<line-dasharray>3</line-dasharray>
+		<line-dasharray>1</line-dasharray>
+		<line-dasharray>1</line-dasharray>
+		<line-dasharray>1</line-dasharray>
 		<line-width>
-			<base>1111</base>
-			<stops>4444</stops>
-			<stops>0.400000</stops>
-			<stops>5555</stops>
-			<stops>1111</stops>
-			<stops>12121212</stops>
-			<stops>3333</stops>
+			<base>1</base>
+			<stops>4</stops>
+			<stops>0.4</stops>
+			<stops>5</stops>
+			<stops>1</stops>
+			<stops>12</stops>
+			<stops>3</stops>
 		</line-width>
 	</paint>
 	<source-layer>admin</source-layer>
@@ -1759,26 +1759,26 @@
 	<filter>all</filter>
 	<filter>==</filter>
 	<filter>admin_level</filter>
-	<filter>2222</filter>
+	<filter>2</filter>
 	<filter>==</filter>
 	<filter>disputed</filter>
-	<filter>0000</filter>
+	<filter>0</filter>
 	<filter>==</filter>
 	<filter>maritime</filter>
-	<filter>0000</filter>
+	<filter>0</filter>
 	<type>line</type>
 	<source>atlas</source>
 	<id>admin_level_2</id>
 	<paint>
 		<line-color>#9e9cab</line-color>
 		<line-width>
-			<base>1111</base>
-			<stops>4444</stops>
-			<stops>1.400000</stops>
-			<stops>5555</stops>
-			<stops>2222</stops>
-			<stops>12121212</stops>
-			<stops>8888</stops>
+			<base>1</base>
+			<stops>4</stops>
+			<stops>1.4</stops>
+			<stops>5</stops>
+			<stops>2</stops>
+			<stops>12</stops>
+			<stops>8</stops>
 		</line-width>
 	</paint>
 	<source-layer>admin</source-layer>
@@ -1792,28 +1792,28 @@
 	<filter>all</filter>
 	<filter>==</filter>
 	<filter>admin_level</filter>
-	<filter>2222</filter>
+	<filter>2</filter>
 	<filter>==</filter>
 	<filter>disputed</filter>
-	<filter>1111</filter>
+	<filter>1</filter>
 	<filter>==</filter>
 	<filter>maritime</filter>
-	<filter>0000</filter>
+	<filter>0</filter>
 	<type>line</type>
 	<source>atlas</source>
 	<id>admin_level_2_disputed</id>
 	<paint>
 		<line-color>#9e9cab</line-color>
-		<line-dasharray>2222</line-dasharray>
-		<line-dasharray>2222</line-dasharray>
+		<line-dasharray>2</line-dasharray>
+		<line-dasharray>2</line-dasharray>
 		<line-width>
-			<base>1111</base>
-			<stops>4444</stops>
-			<stops>1.400000</stops>
-			<stops>5555</stops>
-			<stops>2222</stops>
-			<stops>12121212</stops>
-			<stops>8888</stops>
+			<base>1</base>
+			<stops>4</stops>
+			<stops>1.4</stops>
+			<stops>5</stops>
+			<stops>2</stops>
+			<stops>12</stops>
+			<stops>8</stops>
 		</line-width>
 	</paint>
 	<source-layer>admin</source-layer>
@@ -1827,28 +1827,28 @@
 	<filter>all</filter>
 	<filter>&gt;=</filter>
 	<filter>admin_level</filter>
-	<filter>3333</filter>
+	<filter>3</filter>
 	<filter>==</filter>
 	<filter>maritime</filter>
-	<filter>1111</filter>
+	<filter>1</filter>
 	<type>line</type>
 	<source>atlas</source>
 	<id>admin_level_3_maritime</id>
 	<paint>
 		<line-color>#a0c8f0</line-color>
-		<line-opacity>0.500000</line-opacity>
-		<line-dasharray>3333</line-dasharray>
-		<line-dasharray>1111</line-dasharray>
-		<line-dasharray>1111</line-dasharray>
-		<line-dasharray>1111</line-dasharray>
+		<line-opacity>0.5</line-opacity>
+		<line-dasharray>3</line-dasharray>
+		<line-dasharray>1</line-dasharray>
+		<line-dasharray>1</line-dasharray>
+		<line-dasharray>1</line-dasharray>
 		<line-width>
-			<base>1111</base>
-			<stops>4444</stops>
-			<stops>0.400000</stops>
-			<stops>5555</stops>
-			<stops>1111</stops>
-			<stops>12121212</stops>
-			<stops>3333</stops>
+			<base>1</base>
+			<stops>4</stops>
+			<stops>0.4</stops>
+			<stops>5</stops>
+			<stops>1</stops>
+			<stops>12</stops>
+			<stops>3</stops>
 		</line-width>
 	</paint>
 	<source-layer>admin</source-layer>
@@ -1862,24 +1862,24 @@
 	<filter>all</filter>
 	<filter>==</filter>
 	<filter>admin_level</filter>
-	<filter>2222</filter>
+	<filter>2</filter>
 	<filter>==</filter>
 	<filter>maritime</filter>
-	<filter>1111</filter>
+	<filter>1</filter>
 	<type>line</type>
 	<source>atlas</source>
 	<id>admin_level_2_maritime</id>
 	<paint>
 		<line-color>#a0c8f0</line-color>
-		<line-opacity>0.500000</line-opacity>
+		<line-opacity>0.5</line-opacity>
 		<line-width>
-			<base>1111</base>
-			<stops>4444</stops>
-			<stops>1.400000</stops>
-			<stops>5555</stops>
-			<stops>2222</stops>
-			<stops>12121212</stops>
-			<stops>8888</stops>
+			<base>1</base>
+			<stops>4</stops>
+			<stops>1.4</stops>
+			<stops>5</stops>
+			<stops>2</stops>
+			<stops>12</stops>
+			<stops>8</stops>
 		</line-width>
 	</paint>
 	<source-layer>admin</source-layer>
@@ -1887,8 +1887,8 @@
 	<layout>
 		<text-font>Open Sans Italic</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>5555</text-max-width>
-		<text-size>12121212</text-size>
+		<text-max-width>5</text-max-width>
+		<text-size>12</text-size>
 	</layout>
 	<metadata>
 		<mapbox_group>1444849320558.5054</mapbox_group>
@@ -1901,22 +1901,22 @@
 	<id>water_label</id>
 	<paint>
 		<text-color>#74aee9</text-color>
-		<text-halo-width>1.500000</text-halo-width>
+		<text-halo-width>1.5</text-halo-width>
 		<text-halo-color>rgba(255,255,255,0.7)</text-halo-color>
 	</paint>
 	<source-layer>water_label</source-layer>
 	<true/>
-	<minzoom>16161616</minzoom>
+	<minzoom>16</minzoom>
 	<layout>
 		<icon-image>{maki}-11</icon-image>
 		<text-font>Open Sans Semibold</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>9999</text-max-width>
-		<text-padding>2222</text-padding>
-		<text-offset>0000</text-offset>
-		<text-offset>0.600000</text-offset>
+		<text-max-width>9</text-max-width>
+		<text-padding>2</text-padding>
+		<text-offset>0</text-offset>
+		<text-offset>0.6</text-offset>
 		<text-anchor>top</text-anchor>
-		<text-size>12121212</text-size>
+		<text-size>12</text-size>
 	</layout>
 	<metadata>
 		<mapbox_group>1444849297111.495</mapbox_group>
@@ -1927,29 +1927,29 @@
 	<filter>Point</filter>
 	<filter>==</filter>
 	<filter>scalerank</filter>
-	<filter>4444</filter>
+	<filter>4</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>poi_label_4</id>
 	<paint>
 		<text-color>#666</text-color>
 		<text-halo-color>#ffffff</text-halo-color>
-		<text-halo-width>1111</text-halo-width>
-		<text-halo-blur>0.500000</text-halo-blur>
+		<text-halo-width>1</text-halo-width>
+		<text-halo-blur>0.5</text-halo-blur>
 	</paint>
 	<source-layer>poi_label</source-layer>
 	<true/>
-	<minzoom>15151515</minzoom>
+	<minzoom>15</minzoom>
 	<layout>
 		<icon-image>{maki}-11</icon-image>
 		<text-font>Open Sans Semibold</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>9999</text-max-width>
-		<text-padding>2222</text-padding>
-		<text-offset>0000</text-offset>
-		<text-offset>0.600000</text-offset>
+		<text-max-width>9</text-max-width>
+		<text-padding>2</text-padding>
+		<text-offset>0</text-offset>
+		<text-offset>0.6</text-offset>
 		<text-anchor>top</text-anchor>
-		<text-size>12121212</text-size>
+		<text-size>12</text-size>
 	</layout>
 	<metadata>
 		<mapbox_group>1444849297111.495</mapbox_group>
@@ -1960,29 +1960,29 @@
 	<filter>Point</filter>
 	<filter>==</filter>
 	<filter>scalerank</filter>
-	<filter>3333</filter>
+	<filter>3</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>poi_label_3</id>
 	<paint>
 		<text-color>#666</text-color>
 		<text-halo-color>#ffffff</text-halo-color>
-		<text-halo-width>1111</text-halo-width>
-		<text-halo-blur>0.500000</text-halo-blur>
+		<text-halo-width>1</text-halo-width>
+		<text-halo-blur>0.5</text-halo-blur>
 	</paint>
 	<source-layer>poi_label</source-layer>
 	<true/>
-	<minzoom>14141414</minzoom>
+	<minzoom>14</minzoom>
 	<layout>
 		<icon-image>{maki}-11</icon-image>
 		<text-font>Open Sans Semibold</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>9999</text-max-width>
-		<text-padding>2222</text-padding>
-		<text-offset>0000</text-offset>
-		<text-offset>0.600000</text-offset>
+		<text-max-width>9</text-max-width>
+		<text-padding>2</text-padding>
+		<text-offset>0</text-offset>
+		<text-offset>0.6</text-offset>
 		<text-anchor>top</text-anchor>
-		<text-size>12121212</text-size>
+		<text-size>12</text-size>
 	</layout>
 	<metadata>
 		<mapbox_group>1444849297111.495</mapbox_group>
@@ -1993,28 +1993,28 @@
 	<filter>Point</filter>
 	<filter>==</filter>
 	<filter>scalerank</filter>
-	<filter>2222</filter>
+	<filter>2</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>poi_label_2</id>
 	<paint>
 		<text-color>#666</text-color>
 		<text-halo-color>#ffffff</text-halo-color>
-		<text-halo-width>1111</text-halo-width>
-		<text-halo-blur>0.500000</text-halo-blur>
+		<text-halo-width>1</text-halo-width>
+		<text-halo-blur>0.5</text-halo-blur>
 	</paint>
 	<source-layer>poi_label</source-layer>
 	<layout>
-		<text-size>12121212</text-size>
+		<text-size>12</text-size>
 		<icon-image>{maki}-11</icon-image>
 		<text-font>Open Sans Semibold</text-font>
-		<text-padding>2222</text-padding>
+		<text-padding>2</text-padding>
 		<visibility>visible</visibility>
-		<text-offset>0000</text-offset>
-		<text-offset>0.600000</text-offset>
+		<text-offset>0</text-offset>
+		<text-offset>0.6</text-offset>
 		<text-anchor>top</text-anchor>
 		<text-field>{name}</text-field>
-		<text-max-width>9999</text-max-width>
+		<text-max-width>9</text-max-width>
 	</layout>
 	<metadata>
 		<mapbox_group>1444849297111.495</mapbox_group>
@@ -2025,23 +2025,23 @@
 	<paint>
 		<text-color>#666</text-color>
 		<text-halo-color>#ffffff</text-halo-color>
-		<text-halo-width>1111</text-halo-width>
-		<text-halo-blur>0.500000</text-halo-blur>
+		<text-halo-width>1</text-halo-width>
+		<text-halo-blur>0.5</text-halo-blur>
 	</paint>
 	<source-layer>rail_station_label</source-layer>
 	<true/>
 	<true/>
-	<minzoom>13131313</minzoom>
+	<minzoom>13</minzoom>
 	<layout>
 		<icon-image>{maki}-11</icon-image>
 		<text-font>Open Sans Semibold</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>9999</text-max-width>
-		<text-padding>2222</text-padding>
-		<text-offset>0000</text-offset>
-		<text-offset>0.600000</text-offset>
+		<text-max-width>9</text-max-width>
+		<text-padding>2</text-padding>
+		<text-offset>0</text-offset>
+		<text-offset>0.6</text-offset>
 		<text-anchor>top</text-anchor>
-		<text-size>12121212</text-size>
+		<text-size>12</text-size>
 	</layout>
 	<metadata>
 		<mapbox_group>1444849297111.495</mapbox_group>
@@ -2052,29 +2052,29 @@
 	<filter>Point</filter>
 	<filter>==</filter>
 	<filter>scalerank</filter>
-	<filter>1111</filter>
+	<filter>1</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>poi_label_1</id>
 	<paint>
 		<text-color>#666</text-color>
 		<text-halo-color>#ffffff</text-halo-color>
-		<text-halo-width>1111</text-halo-width>
-		<text-halo-blur>0.500000</text-halo-blur>
+		<text-halo-width>1</text-halo-width>
+		<text-halo-blur>0.5</text-halo-blur>
 	</paint>
 	<source-layer>poi_label</source-layer>
 	<true/>
-	<minzoom>11111111</minzoom>
+	<minzoom>11</minzoom>
 	<layout>
 		<icon-image>{maki}-11</icon-image>
 		<text-font>Open Sans Semibold</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>9999</text-max-width>
-		<text-padding>2222</text-padding>
-		<text-offset>0000</text-offset>
-		<text-offset>0.600000</text-offset>
+		<text-max-width>9</text-max-width>
+		<text-padding>2</text-padding>
+		<text-offset>0</text-offset>
+		<text-offset>0.6</text-offset>
 		<text-anchor>top</text-anchor>
-		<text-size>12121212</text-size>
+		<text-size>12</text-size>
 	</layout>
 	<metadata>
 		<mapbox_group>1444849297111.495</mapbox_group>
@@ -2085,17 +2085,17 @@
 	<filter>Point</filter>
 	<filter>in</filter>
 	<filter>scalerank</filter>
-	<filter>1111</filter>
-	<filter>2222</filter>
-	<filter>3333</filter>
+	<filter>1</filter>
+	<filter>2</filter>
+	<filter>3</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>airport_label</id>
 	<paint>
 		<text-color>#666</text-color>
 		<text-halo-color>#ffffff</text-halo-color>
-		<text-halo-width>1111</text-halo-width>
-		<text-halo-blur>0.500000</text-halo-blur>
+		<text-halo-width>1</text-halo-width>
+		<text-halo-blur>0.5</text-halo-blur>
 	</paint>
 	<source-layer>airport_label</source-layer>
 	<true/>
@@ -2103,11 +2103,11 @@
 		<text-field>{name}</text-field>
 		<text-font>Open Sans Regular</text-font>
 		<text-size>
-			<base>1111</base>
-			<stops>13131313</stops>
-			<stops>12121212</stops>
-			<stops>14141414</stops>
-			<stops>13131313</stops>
+			<base>1</base>
+			<stops>13</stops>
+			<stops>12</stops>
+			<stops>14</stops>
+			<stops>13</stops>
 		</text-size>
 		<symbol-placement>line</symbol-placement>
 	</layout>
@@ -2122,25 +2122,25 @@
 	<id>road_label</id>
 	<paint>
 		<text-color>#765</text-color>
-		<text-halo-width>1111</text-halo-width>
-		<text-halo-blur>0.500000</text-halo-blur>
+		<text-halo-width>1</text-halo-width>
+		<text-halo-blur>0.5</text-halo-blur>
 	</paint>
 	<source-layer>road_label</source-layer>
 	<true/>
-	<minzoom>8888</minzoom>
+	<minzoom>8</minzoom>
 	<layout>
 		<text-field>{ref}</text-field>
 		<text-font>Open Sans Semibold</text-font>
-		<text-size>11111111</text-size>
+		<text-size>11</text-size>
 		<icon-image>motorway_{reflen}</icon-image>
 		<symbol-placement>
-			<base>1111</base>
-			<stops>10101010</stops>
+			<base>1</base>
+			<stops>10</stops>
 			<stops>point</stops>
-			<stops>11111111</stops>
+			<stops>11</stops>
 			<stops>line</stops>
 		</symbol-placement>
-		<symbol-spacing>500500500500</symbol-spacing>
+		<symbol-spacing>500</symbol-spacing>
 		<text-rotation-alignment>viewport</text-rotation-alignment>
 		<icon-rotation-alignment>viewport</icon-rotation-alignment>
 	</layout>
@@ -2149,7 +2149,7 @@
 	</metadata>
 	<filter>&lt;=</filter>
 	<filter>reflen</filter>
-	<filter>6666</filter>
+	<filter>6</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>road_label_highway_shield</id>
@@ -2159,15 +2159,15 @@
 	<layout>
 		<text-font>Open Sans Bold</text-font>
 		<text-transform>uppercase</text-transform>
-		<text-letter-spacing>0.100000</text-letter-spacing>
+		<text-letter-spacing>0.1</text-letter-spacing>
 		<text-field>{name}</text-field>
-		<text-max-width>9999</text-max-width>
+		<text-max-width>9</text-max-width>
 		<text-size>
-			<base>1.200000</base>
-			<stops>12121212</stops>
-			<stops>10101010</stops>
-			<stops>15151515</stops>
-			<stops>14141414</stops>
+			<base>1.2</base>
+			<stops>12</stops>
+			<stops>10</stops>
+			<stops>15</stops>
+			<stops>14</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2186,20 +2186,20 @@
 	<paint>
 		<text-color>#633</text-color>
 		<text-halo-color>rgba(255,255,255,0.8)</text-halo-color>
-		<text-halo-width>1.200000</text-halo-width>
+		<text-halo-width>1.2</text-halo-width>
 	</paint>
 	<source-layer>place_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Regular</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>8888</text-max-width>
+		<text-max-width>8</text-max-width>
 		<text-size>
-			<base>1.200000</base>
-			<stops>10101010</stops>
-			<stops>12121212</stops>
-			<stops>15151515</stops>
-			<stops>22222222</stops>
+			<base>1.2</base>
+			<stops>10</stops>
+			<stops>12</stops>
+			<stops>15</stops>
+			<stops>22</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2214,20 +2214,20 @@
 	<paint>
 		<text-color>#333</text-color>
 		<text-halo-color>rgba(255,255,255,0.8)</text-halo-color>
-		<text-halo-width>1.200000</text-halo-width>
+		<text-halo-width>1.2</text-halo-width>
 	</paint>
 	<source-layer>place_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Regular</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>8888</text-max-width>
+		<text-max-width>8</text-max-width>
 		<text-size>
-			<base>1.200000</base>
-			<stops>10101010</stops>
-			<stops>14141414</stops>
-			<stops>15151515</stops>
-			<stops>24242424</stops>
+			<base>1.2</base>
+			<stops>10</stops>
+			<stops>14</stops>
+			<stops>15</stops>
+			<stops>24</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2242,20 +2242,20 @@
 	<paint>
 		<text-color>#333</text-color>
 		<text-halo-color>rgba(255,255,255,0.8)</text-halo-color>
-		<text-halo-width>1.200000</text-halo-width>
+		<text-halo-width>1.2</text-halo-width>
 	</paint>
 	<source-layer>place_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Semibold</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>8888</text-max-width>
+		<text-max-width>8</text-max-width>
 		<text-size>
-			<base>1.200000</base>
-			<stops>7777</stops>
-			<stops>14141414</stops>
-			<stops>11111111</stops>
-			<stops>24242424</stops>
+			<base>1.2</base>
+			<stops>7</stops>
+			<stops>14</stops>
+			<stops>11</stops>
+			<stops>24</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2270,20 +2270,20 @@
 	<paint>
 		<text-color>#333</text-color>
 		<text-halo-color>rgba(255,255,255,0.8)</text-halo-color>
-		<text-halo-width>1.200000</text-halo-width>
+		<text-halo-width>1.2</text-halo-width>
 	</paint>
 	<source-layer>place_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Italic</text-font>
 		<text-field>{name}</text-field>
-		<text-letter-spacing>0.200000</text-letter-spacing>
+		<text-letter-spacing>0.2</text-letter-spacing>
 		<symbol-placement>line</symbol-placement>
 		<text-size>
-			<stops>3333</stops>
-			<stops>11111111</stops>
-			<stops>4444</stops>
-			<stops>12121212</stops>
+			<stops>3</stops>
+			<stops>11</stops>
+			<stops>4</stops>
+			<stops>12</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2295,29 +2295,29 @@
 	<filter>LineString</filter>
 	<filter>&gt;=</filter>
 	<filter>labelrank</filter>
-	<filter>4444</filter>
+	<filter>4</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>marine_label_line_4</id>
 	<paint>
 		<text-color>#74aee9</text-color>
 		<text-halo-color>rgba(255,255,255,0.7)</text-halo-color>
-		<text-halo-width>0.750000</text-halo-width>
-		<text-halo-blur>0.750000</text-halo-blur>
+		<text-halo-width>0.75</text-halo-width>
+		<text-halo-blur>0.75</text-halo-blur>
 	</paint>
 	<source-layer>marine_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Italic</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>6666</text-max-width>
-		<text-letter-spacing>0.200000</text-letter-spacing>
+		<text-max-width>6</text-max-width>
+		<text-letter-spacing>0.2</text-letter-spacing>
 		<symbol-placement>point</symbol-placement>
 		<text-size>
-			<stops>3333</stops>
-			<stops>11111111</stops>
-			<stops>4444</stops>
-			<stops>12121212</stops>
+			<stops>3</stops>
+			<stops>11</stops>
+			<stops>4</stops>
+			<stops>12</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2329,28 +2329,28 @@
 	<filter>Point</filter>
 	<filter>&gt;=</filter>
 	<filter>labelrank</filter>
-	<filter>4444</filter>
+	<filter>4</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>marine_label_4</id>
 	<paint>
 		<text-color>#74aee9</text-color>
 		<text-halo-color>rgba(255,255,255,0.7)</text-halo-color>
-		<text-halo-width>0.750000</text-halo-width>
-		<text-halo-blur>0.750000</text-halo-blur>
+		<text-halo-width>0.75</text-halo-width>
+		<text-halo-blur>0.75</text-halo-blur>
 	</paint>
 	<source-layer>marine_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Italic</text-font>
 		<text-field>{name}</text-field>
-		<text-letter-spacing>0.200000</text-letter-spacing>
+		<text-letter-spacing>0.2</text-letter-spacing>
 		<symbol-placement>line</symbol-placement>
 		<text-size>
-			<stops>3333</stops>
-			<stops>11111111</stops>
-			<stops>4444</stops>
-			<stops>14141414</stops>
+			<stops>3</stops>
+			<stops>11</stops>
+			<stops>4</stops>
+			<stops>14</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2362,29 +2362,29 @@
 	<filter>LineString</filter>
 	<filter>==</filter>
 	<filter>labelrank</filter>
-	<filter>3333</filter>
+	<filter>3</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>marine_label_line_3</id>
 	<paint>
 		<text-color>#74aee9</text-color>
 		<text-halo-color>rgba(255,255,255,0.7)</text-halo-color>
-		<text-halo-width>0.750000</text-halo-width>
-		<text-halo-blur>0.750000</text-halo-blur>
+		<text-halo-width>0.75</text-halo-width>
+		<text-halo-blur>0.75</text-halo-blur>
 	</paint>
 	<source-layer>marine_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Italic</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>5555</text-max-width>
-		<text-letter-spacing>0.200000</text-letter-spacing>
+		<text-max-width>5</text-max-width>
+		<text-letter-spacing>0.2</text-letter-spacing>
 		<symbol-placement>point</symbol-placement>
 		<text-size>
-			<stops>3333</stops>
-			<stops>11111111</stops>
-			<stops>4444</stops>
-			<stops>14141414</stops>
+			<stops>3</stops>
+			<stops>11</stops>
+			<stops>4</stops>
+			<stops>14</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2396,28 +2396,28 @@
 	<filter>Point</filter>
 	<filter>==</filter>
 	<filter>labelrank</filter>
-	<filter>3333</filter>
+	<filter>3</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>marine_label_point_3</id>
 	<paint>
 		<text-color>#74aee9</text-color>
 		<text-halo-color>rgba(255,255,255,0.7)</text-halo-color>
-		<text-halo-width>0.750000</text-halo-width>
-		<text-halo-blur>0.750000</text-halo-blur>
+		<text-halo-width>0.75</text-halo-width>
+		<text-halo-blur>0.75</text-halo-blur>
 	</paint>
 	<source-layer>marine_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Italic</text-font>
 		<text-field>{name}</text-field>
-		<text-letter-spacing>0.200000</text-letter-spacing>
+		<text-letter-spacing>0.2</text-letter-spacing>
 		<symbol-placement>line</symbol-placement>
 		<text-size>
-			<stops>3333</stops>
-			<stops>14141414</stops>
-			<stops>4444</stops>
-			<stops>16161616</stops>
+			<stops>3</stops>
+			<stops>14</stops>
+			<stops>4</stops>
+			<stops>16</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2429,29 +2429,29 @@
 	<filter>LineString</filter>
 	<filter>==</filter>
 	<filter>labelrank</filter>
-	<filter>2222</filter>
+	<filter>2</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>marine_label_line_2</id>
 	<paint>
 		<text-color>#74aee9</text-color>
 		<text-halo-color>rgba(255,255,255,0.7)</text-halo-color>
-		<text-halo-width>0.750000</text-halo-width>
-		<text-halo-blur>0.750000</text-halo-blur>
+		<text-halo-width>0.75</text-halo-width>
+		<text-halo-blur>0.75</text-halo-blur>
 	</paint>
 	<source-layer>marine_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Italic</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>5555</text-max-width>
-		<text-letter-spacing>0.200000</text-letter-spacing>
+		<text-max-width>5</text-max-width>
+		<text-letter-spacing>0.2</text-letter-spacing>
 		<symbol-placement>point</symbol-placement>
 		<text-size>
-			<stops>3333</stops>
-			<stops>14141414</stops>
-			<stops>4444</stops>
-			<stops>16161616</stops>
+			<stops>3</stops>
+			<stops>14</stops>
+			<stops>4</stops>
+			<stops>16</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2463,28 +2463,28 @@
 	<filter>Point</filter>
 	<filter>==</filter>
 	<filter>labelrank</filter>
-	<filter>2222</filter>
+	<filter>2</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>marine_label_point_2</id>
 	<paint>
 		<text-color>#74aee9</text-color>
 		<text-halo-color>rgba(255,255,255,0.7)</text-halo-color>
-		<text-halo-width>0.750000</text-halo-width>
-		<text-halo-blur>0.750000</text-halo-blur>
+		<text-halo-width>0.75</text-halo-width>
+		<text-halo-blur>0.75</text-halo-blur>
 	</paint>
 	<source-layer>marine_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Italic</text-font>
 		<text-field>{name}</text-field>
-		<text-letter-spacing>0.200000</text-letter-spacing>
+		<text-letter-spacing>0.2</text-letter-spacing>
 		<symbol-placement>line</symbol-placement>
 		<text-size>
-			<stops>3333</stops>
-			<stops>18181818</stops>
-			<stops>4444</stops>
-			<stops>22222222</stops>
+			<stops>3</stops>
+			<stops>18</stops>
+			<stops>4</stops>
+			<stops>22</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2496,32 +2496,32 @@
 	<filter>LineString</filter>
 	<filter>==</filter>
 	<filter>labelrank</filter>
-	<filter>1111</filter>
+	<filter>1</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>marine_label_line_1</id>
 	<paint>
 		<text-color>#74aee9</text-color>
 		<text-halo-color>rgba(255,255,255,0.7)</text-halo-color>
-		<text-halo-width>0.750000</text-halo-width>
-		<text-halo-blur>0.750000</text-halo-blur>
+		<text-halo-width>0.75</text-halo-width>
+		<text-halo-blur>0.75</text-halo-blur>
 	</paint>
 	<source-layer>marine_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Italic</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>5555</text-max-width>
-		<text-letter-spacing>0.200000</text-letter-spacing>
-		<text-line-height>1.600000</text-line-height>
+		<text-max-width>5</text-max-width>
+		<text-letter-spacing>0.2</text-letter-spacing>
+		<text-line-height>1.6</text-line-height>
 		<symbol-placement>point</symbol-placement>
-		<text-offset>0000</text-offset>
-		<text-offset>2.400000</text-offset>
+		<text-offset>0</text-offset>
+		<text-offset>2.4</text-offset>
 		<text-size>
-			<stops>3333</stops>
-			<stops>18181818</stops>
-			<stops>4444</stops>
-			<stops>22222222</stops>
+			<stops>3</stops>
+			<stops>18</stops>
+			<stops>4</stops>
+			<stops>22</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2533,28 +2533,28 @@
 	<filter>Point</filter>
 	<filter>==</filter>
 	<filter>labelrank</filter>
-	<filter>1111</filter>
+	<filter>1</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>marine_label_point_1</id>
 	<paint>
 		<text-color>#74aee9</text-color>
 		<text-halo-color>rgba(255,255,255,0.7)</text-halo-color>
-		<text-halo-width>0.750000</text-halo-width>
-		<text-halo-blur>0.750000</text-halo-blur>
+		<text-halo-width>0.75</text-halo-width>
+		<text-halo-blur>0.75</text-halo-blur>
 	</paint>
 	<source-layer>marine_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Bold</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>6.250000</text-max-width>
+		<text-max-width>6.25</text-max-width>
 		<text-transform>uppercase</text-transform>
 		<text-size>
-			<stops>4444</stops>
-			<stops>11111111</stops>
-			<stops>6666</stops>
-			<stops>15151515</stops>
+			<stops>4</stops>
+			<stops>11</stops>
+			<stops>6</stops>
+			<stops>15</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2562,28 +2562,28 @@
 	</metadata>
 	<filter>&gt;=</filter>
 	<filter>scalerank</filter>
-	<filter>4444</filter>
+	<filter>4</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>country_label_4</id>
 	<paint>
 		<text-color>#334</text-color>
 		<text-halo-color>rgba(255,255,255,0.8)</text-halo-color>
-		<text-halo-width>2222</text-halo-width>
-		<text-halo-blur>1111</text-halo-blur>
+		<text-halo-width>2</text-halo-width>
+		<text-halo-blur>1</text-halo-blur>
 	</paint>
 	<source-layer>country_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Bold</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>6.250000</text-max-width>
+		<text-max-width>6.25</text-max-width>
 		<text-transform>uppercase</text-transform>
 		<text-size>
-			<stops>3333</stops>
-			<stops>11111111</stops>
-			<stops>7777</stops>
-			<stops>17171717</stops>
+			<stops>3</stops>
+			<stops>11</stops>
+			<stops>7</stops>
+			<stops>17</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2591,28 +2591,28 @@
 	</metadata>
 	<filter>==</filter>
 	<filter>scalerank</filter>
-	<filter>3333</filter>
+	<filter>3</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>country_label_3</id>
 	<paint>
 		<text-color>#334</text-color>
 		<text-halo-color>rgba(255,255,255,0.8)</text-halo-color>
-		<text-halo-width>2222</text-halo-width>
-		<text-halo-blur>1111</text-halo-blur>
+		<text-halo-width>2</text-halo-width>
+		<text-halo-blur>1</text-halo-blur>
 	</paint>
 	<source-layer>country_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Bold</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>6.250000</text-max-width>
+		<text-max-width>6.25</text-max-width>
 		<text-transform>uppercase</text-transform>
 		<text-size>
-			<stops>2222</stops>
-			<stops>11111111</stops>
-			<stops>5555</stops>
-			<stops>17171717</stops>
+			<stops>2</stops>
+			<stops>11</stops>
+			<stops>5</stops>
+			<stops>17</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2620,28 +2620,28 @@
 	</metadata>
 	<filter>==</filter>
 	<filter>scalerank</filter>
-	<filter>2222</filter>
+	<filter>2</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>country_label_2</id>
 	<paint>
 		<text-color>#334</text-color>
 		<text-halo-color>rgba(255,255,255,0.8)</text-halo-color>
-		<text-halo-width>2222</text-halo-width>
-		<text-halo-blur>1111</text-halo-blur>
+		<text-halo-width>2</text-halo-width>
+		<text-halo-blur>1</text-halo-blur>
 	</paint>
 	<source-layer>country_label</source-layer>
 	<true/>
 	<layout>
 		<text-font>Open Sans Bold</text-font>
 		<text-field>{name}</text-field>
-		<text-max-width>6.250000</text-max-width>
+		<text-max-width>6.25</text-max-width>
 		<text-transform>uppercase</text-transform>
 		<text-size>
-			<stops>1111</stops>
-			<stops>11111111</stops>
-			<stops>4444</stops>
-			<stops>17171717</stops>
+			<stops>1</stops>
+			<stops>11</stops>
+			<stops>4</stops>
+			<stops>17</stops>
 		</text-size>
 	</layout>
 	<metadata>
@@ -2649,15 +2649,15 @@
 	</metadata>
 	<filter>==</filter>
 	<filter>scalerank</filter>
-	<filter>1111</filter>
+	<filter>1</filter>
 	<type>symbol</type>
 	<source>atlas</source>
 	<id>country_label_1</id>
 	<paint>
 		<text-color>#334</text-color>
 		<text-halo-color>rgba(255,255,255,0.8)</text-halo-color>
-		<text-halo-width>2222</text-halo-width>
-		<text-halo-blur>1111</text-halo-blur>
+		<text-halo-width>2</text-halo-width>
+		<text-halo-blur>1</text-halo-blur>
 	</paint>
 	<source-layer>country_label</source-layer>
 </documnet>

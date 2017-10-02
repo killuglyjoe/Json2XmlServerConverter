@@ -105,16 +105,16 @@ namespace Json2Xml
                     if(objName.IsDouble())
                         ss << (objName.GetDouble());
 
-                    if(objName.IsInt())
+                    else if(objName.IsInt())
                         ss <<  (objName.GetInt());
 
-                    if(objName.IsUint())
+                    else if(objName.IsUint())
                         ss <<  (objName.GetUint());
 
-                    if(objName.IsInt64())
+                    else if(objName.IsInt64())
                         ss <<  (objName.GetInt64());
 
-                    if(objName.IsUint64())
+                    else if(objName.IsUint64())
                         ss <<  (objName.GetUint64());
 
                     str = ss.str();
