@@ -16,7 +16,13 @@ namespace Json2Xml
 {
     void  parseObject(const  rapidjson::Value& rootObj, rapidxml::xml_node<>* node, rapidxml::xml_document<> *xml_doc);
 
-    void  appenNode(rapidxml::xml_node<> *rootNode, rapidxml::xml_document<> *xml_doc, const char *name)
+    /**
+     * @brief Appends node with initializing it
+     * @param rootNode
+     * @param xml_doc
+     * @param name
+     */
+    void  appendNode(rapidxml::xml_node<> *rootNode, rapidxml::xml_document<> *xml_doc, const char *name)
     {
         rapidxml::xml_node<>* node = xml_doc->allocate_node(rapidxml::node_element, name);
 
@@ -26,7 +32,13 @@ namespace Json2Xml
             xml_doc->append_node(node);
     }
 
-    void  appenNode(rapidxml::xml_node<> *node, rapidxml::xml_node<> *rootNode, rapidxml::xml_document<> *xml_doc)
+    /**
+     * @brief Appends node to root or as root
+     * @param node
+     * @param rootNode
+     * @param xml_doc
+     */
+    void  appendNode(rapidxml::xml_node<> *node, rapidxml::xml_node<> *rootNode, rapidxml::xml_document<> *xml_doc)
     {
         if(rootNode)
             rootNode->append_node(node);
@@ -34,14 +46,13 @@ namespace Json2Xml
             xml_doc->append_node(node);
     }
 
-    void  putAsNumber(const  rapidjson::Value& objName, rapidxml::xml_node<>* node, rapidxml::xml_document<> *xml_doc)
-    {
-        std::ostringstream strs;
-        strs << objName.GetDouble();
-        std::string str = strs.str();
-        node->append_attribute(xml_doc->allocate_attribute(objName.GetString(), str.c_str()));
-    }
-
+    /**
+     * @brief Parses JSON node by content type
+     * @param objName
+     * @param node
+     * @param xml_doc
+     * @param rootIter
+     */
     void  parseByObjectType(const  rapidjson::Value& objName,
                      rapidxml::xml_node<>* node, rapidxml::xml_document<> *xml_doc,
                      rapidjson::Value::ConstMemberIterator *rootIter)
@@ -49,15 +60,15 @@ namespace Json2Xml
         switch (objName.GetType())
         {
             case rapidjson::kNullType:
-                appenNode(node, xml_doc, "");
+                appendNode(node, xml_doc, "");
                 break;
 
             case rapidjson::kFalseType:
-                appenNode(node, xml_doc, "false");
+                appendNode(node, xml_doc, "false");
                 break;
 
             case rapidjson::kTrueType:
-                appenNode(node, xml_doc, "true");
+                appendNode(node, xml_doc, "true");
                 break;
 
             case rapidjson::kObjectType:
@@ -67,7 +78,7 @@ namespace Json2Xml
                     // put all root attributes
                     parseObject(objName, elem, xml_doc);
                     // close root node
-                    appenNode(elem, node, xml_doc);
+                    appendNode(elem, node, xml_doc);
                 }
                 break;
 
@@ -75,7 +86,6 @@ namespace Json2Xml
                 {
                     for (rapidjson::SizeType i = 0; i < objName.Size(); i++) // Uses SizeType instead of size_t
                     {
-//                        std::cout << "--- Array " << objName[i].GetString() << std::endl;
                         if(objName[i].IsObject())
                             parseObject(objName[i], node, xml_doc);
                         else
@@ -93,7 +103,7 @@ namespace Json2Xml
 
                     rapidxml::xml_node<>* elem = xml_doc->allocate_node(rapidxml::node_element, (*rootIter)->name.GetString(),
                                                                         value);
-                    appenNode(elem, node, xml_doc);
+                    appendNode(elem, node, xml_doc);
                 }
                 break;
 
@@ -120,7 +130,7 @@ namespace Json2Xml
                     str = ss.str();
                     rapidxml::xml_node<>* elem = xml_doc->allocate_node(rapidxml::node_element, (*rootIter)->name.GetString(),
                                                                         xml_doc->allocate_string(str.data()));
-                    appenNode(elem, node, xml_doc);
+                    appendNode(elem, node, xml_doc);
                 }
                 break;
             default:
@@ -129,7 +139,7 @@ namespace Json2Xml
     }
 
     /**
-     * @brief parse generic json object
+     * @brief Parses generic json object
      * @param objName
      * @param node
      * @param xml_doc
@@ -148,6 +158,11 @@ namespace Json2Xml
         }
     }
 
+    /**
+     * @brief Will return XML converted text or empty
+     * @param json_str
+     * @return
+     */
     std::string json2xml(const char *json_str)
     {
         //file<> fdoc("track_orig.xml"); // could serve another use case
@@ -165,12 +180,12 @@ namespace Json2Xml
             decl->append_attribute(xml_doc->allocate_attribute("encoding", "utf-8"));
             xml_doc->append_node(decl);
 
-            // this is root node
+            // be sure that's always has root node
             rapidxml::xml_node<>* elem = xml_doc->allocate_node(rapidxml::node_element, xml_doc->allocate_string("documnet"));
             // put all root attributes
             parseObject(js_doc, elem, xml_doc);
             // close root node
-            appenNode(elem, 0, xml_doc);
+            appendNode(elem, 0, xml_doc);
         }
 
         xml_doc->validate();

@@ -283,7 +283,6 @@ int main(int argc, char **argv)
     for(i=0;i<32;i++)
         (void)close(i);		/* close open files */
     (void)setpgrp();		/* break away from process group */
-//    logger(LOG,"nweb starting", std::string(port).c_str(), getpid());
 
     /* setup the network socket */
     if((listenfd = socket(AF_INET, SOCK_STREAM,0)) <0)
