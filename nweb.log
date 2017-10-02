@@ -1534,3 +1534,4 @@ Connection: close
 Content-Type: text/xml
 
 :13
+FORBIDDEN: failed to read browser request:

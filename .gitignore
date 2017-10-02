@@ -23,7 +23,6 @@ tags
 .DS_Store
 .directory
 *.debug
-Makefile*
 QtMakefile*
 *.prl
 *.app
