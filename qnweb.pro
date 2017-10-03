@@ -15,10 +15,9 @@ CONFIG -= app_bundle qml_debug
 #Build pathes
 BUILDDIR = Compiled
 
-linux-g++:TARGET = QNweb
-linux-g++: BUILDDIR = Compiled/Linux32
+TARGET = QNweb
 
-linux-g++-64:TARGET = QNweb64
+linux-g++: BUILDDIR = Compiled/Linux32
 linux-g++-64: BUILDDIR = Compiled/Linux64
 
 #DESTDIR += $$PWD/Distr

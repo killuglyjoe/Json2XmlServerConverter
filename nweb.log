@@ -579,3 +579,57 @@ Connection: close
 Content-Type: text/xml
 
 :9
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:10
+ INFO: SEND:image/test.png:10
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:10
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:11
+ INFO: SEND:foo/bar.xml :11
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 62041
+Connection: close
+Content-Type: text/xml
+
+:11
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:12
+ INFO: SEND:foo/bar.xml :12
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 62041
+Connection: close
+Content-Type: text/xml
+
+:12
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:13
+ INFO: SEND:image/test.png:13
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:13
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:14
+ INFO: SEND:foo/bar.xml :14
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 62041
+Connection: close
+Content-Type: text/xml
+
+:14
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:15
+ INFO: SEND:image/test.png:15
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:15

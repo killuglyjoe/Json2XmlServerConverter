@@ -28,7 +28,7 @@ open in QtCreator qnweb.pro and build it
 or run in command line
 
 ```Shell
-qmake && make
+qmake && make -f QtMakefile
 ```
 
 then run
