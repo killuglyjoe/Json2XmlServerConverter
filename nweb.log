@@ -1,1014 +1,564 @@
- INFO: nweb starting:8181:7964
- INFO: request:GET / HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
-NOT FOUND: failed to open file:index.html
- INFO: request:GET /favicon.ico HTTP/1.1**Host: localhost:8181**Connection: keep-alive**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://localhost:8181/**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:5
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:6
+ INFO: SEND:foo/bar.xml :6
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 62041
+Connection: close
+Content-Type: text/xml
+
+:6
+ INFO: request:GET /favicon.ico HTTP/1.1**Host: localhost:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3**Accept-Encoding: gzip, deflate**Connection: keep-alive****:7
 NOT FOUND: failed to open file:favicon.ico
- INFO: request:GET /test.jpeg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
-NOT FOUND: failed to open file:test.jpeg
- INFO: request:GET /test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:4
-NOT FOUND: failed to open file:test.jpg
-FORBIDDEN: failed to read browser request:
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /images/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:7
- INFO: SEND:images/test.jpg:7
+ INFO: request:GET /favicon.ico HTTP/1.1**Host: localhost:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: */***Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3**Accept-Encoding: gzip, deflate**Connection: keep-alive****:8
+NOT FOUND: failed to open file:favicon.ico
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:9
+ INFO: SEND:foo/bar.xml :9
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 1505979
+Content-Length: 62041
 Connection: close
-Content-Type: image/jpg
+Content-Type: text/xml
 
-:7
-FORBIDDEN: failed to read browser request:
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /images/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:10
- INFO: SEND:images/test.jpg:10
+:9
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:10
+ INFO: SEND:image/test.png:10
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 1505979
-Connection: close
-Content-Type: image/jpg
-
-:10
- INFO: request:GET /images/test.jpg1 HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:11
-FORBIDDEN: file extension type not supported:GET /images/test.jpg1
- INFO: request:GET /images/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:12
- INFO: SEND:images/test.jpg:12
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 1505979
-Connection: close
-Content-Type: image/jpg
-
-:12
- INFO: nweb starting:8181:9586
-ERROR: system call:bind Errno=98 exiting pid=9586
- INFO: nweb starting:8181:9604
-ERROR: system call:bind Errno=98 exiting pid=9604
- INFO: nweb starting:8181:9620
- INFO: request:GET /images/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:images/test.jpg:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 1505979
-Connection: close
-Content-Type: image/jpg
-
-:1
- INFO: request:GET /images/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
- INFO: SEND:images/test.jpg:2
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 1505979
-Connection: close
-Content-Type: image/jpg
-
-:2
- INFO: nweb starting:8181:9706
- INFO: nweb starting:8181:9730
- INFO: nweb starting:8181:10001
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:foo/bar.json:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 583
-Connection: close
-Content-Type: foo/json
-
-:1
- INFO: nweb starting:8181:12824
- INFO: request:GET /images/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
-FORBIDDEN: file extension type not supported:GET /images/test.jpg
- INFO: nweb starting:8181:12873
-ERROR: system call:bind Errno=98 exiting pid=12873
- INFO: request:GET /images/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
-FORBIDDEN: file extension type not supported:GET /images/test.jpg
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:4
-FORBIDDEN: file extension type not supported:GET /foo/test.jpg
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:6
-FORBIDDEN: file extension type not supported:GET /foo/test.jpg
- INFO: nweb starting:8181:12974
-ERROR: system call:bind Errno=98 exiting pid=12974
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:8
-FORBIDDEN: file extension type not supported:GET /foo/test.jpg
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/test.jpeg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:10
-FORBIDDEN: file extension type not supported:GET /foo/test.jpeg
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/test.jpeg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:12
-FORBIDDEN: file extension type not supported:GET /foo/test.jpeg
- INFO: request:GET /foo/test.jpeg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:13
-FORBIDDEN: file extension type not supported:GET /foo/test.jpeg
- INFO: nweb starting:8181:13016
-ERROR: system call:bind Errno=98 exiting pid=13016
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/test.jpeg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:15
-FORBIDDEN: file extension type not supported:GET /foo/test.jpeg
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/test.jpeg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:17
-FORBIDDEN: file extension type not supported:GET /foo/test.jpeg
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:19
- INFO: SEND:foo/bar.json:19
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 583
-Connection: close
-Content-Type: foo/json
-
-:19
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:21
-FORBIDDEN: file extension type not supported:GET /image/test.png
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:23
-FORBIDDEN: file extension type not supported:GET /image/test.png
-FORBIDDEN: failed to read browser request:
- INFO: nweb starting:8181:13201
-ERROR: system call:bind Errno=98 exiting pid=13201
- INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:25
-FORBIDDEN: file extension type not supported:GET /image/test.png
-FORBIDDEN: failed to read browser request:
- INFO: nweb starting:8181:13244
-ERROR: system call:bind Errno=98 exiting pid=13244
- INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:27
-FORBIDDEN: file extension type not supported:GET /image/test.png
- INFO: request:GET /foo/test.jpeg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:28
-FORBIDDEN: file extension type not supported:GET /foo/test.jpeg
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:30
- INFO: SEND:foo/bar.json:30
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 583
-Connection: close
-Content-Type: foo/json
-
-:30
- INFO: nweb starting:8181:13328
-ERROR: system call:bind Errno=98 exiting pid=13328
- INFO: nweb starting:8181:13355
-ERROR: system call:bind Errno=98 exiting pid=13355
- INFO: nweb starting:8181:13467
-ERROR: system call:bind Errno=98 exiting pid=13467
- INFO: nweb starting:8181:13485
-ERROR: system call:bind Errno=98 exiting pid=13485
- INFO: nweb starting:8181:13500
-ERROR: system call:bind Errno=98 exiting pid=13500
- INFO: nweb starting:8181:13532
-ERROR: system call:bind Errno=98 exiting pid=13532
- INFO: nweb starting:8181:13564
-ERROR: system call:bind Errno=98 exiting pid=13564
- INFO: nweb starting:8181:13596
-ERROR: system call:bind Errno=98 exiting pid=13596
- INFO: nweb starting:8181:13616
-ERROR: system call:bind Errno=98 exiting pid=13616
- INFO: nweb starting:8181:13646
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:foo/bar.json:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 583
-Connection: close
-Content-Type: foo/json
-
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
- INFO: SEND:foo/bar.json:2
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 583
-Connection: close
-Content-Type: foo/json
-
-:2
-FORBIDDEN: failed to read browser request:
- INFO: nweb starting:8181:13748
- INFO: request:GET /images/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
-FORBIDDEN: file extension type not supported:GET /images/test.jpg
- INFO: request:GET /images/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
-NOT FOUND: failed to open file:images/test.png
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:4
- INFO: SEND:foo/bar.json:4
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 583
-Connection: close
-Content-Type: foo/json
-
-:4
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:5
- INFO: SEND:foo/bar.json:5
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 583
-Connection: close
-Content-Type: foo/json
-
-:5
-FORBIDDEN: failed to read browser request:
-ERROR: system call:bind Errno=98 exiting pid=14851
-ERROR: system call:bind Errno=98 exiting pid=14893
-ERROR: system call:bind Errno=98 exiting pid=14925
- INFO: request:GET /images/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
-NOT FOUND: failed to open file:images/test.png
- INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
- INFO: SEND:image/test.png:2
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 1724871
+Content-Length: 104427
 Connection: close
 Content-Type: image/png
 
-:2
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:foo/bar.json:1
+:10
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:11
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:12
+ INFO: SEND:image/test.png:12
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 583
+Content-Length: 104427
 Connection: close
-Content-Type: foo/json
+Content-Type: image/png
 
-:1
-ERROR: system call:bind Errno=98 exiting pid=6705
-ERROR: system call:bind Errno=98 exiting pid=6708
-ERROR: system call:bind Errno=98 exiting pid=6715
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:foo/bar.json:1
+:12
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:13
+ INFO: SEND:image/test.png:13
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 583
+Content-Length: 104427
 Connection: close
-Content-Type: foo/json
+Content-Type: image/png
 
-:1
-ERROR: system call:bind Errno=98 exiting pid=7964
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:foo/bar.json:1
+:13
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:14
+ INFO: SEND:foo/bar.xml :14
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 583
+Content-Length: 62041
 Connection: close
-Content-Type: foo/json
+Content-Type: text/xml
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:foo/bar.json:1
+:14
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:15
+ INFO: request:GET /image/test.png HTTP/1.1**Host: 127.0.0.1:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:16
+ INFO: SEND:image/test.png:16
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 583
+Content-Length: 104427
 Connection: close
-Content-Type: foo/json
+Content-Type: image/png
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:foo/bar.json:1
+:16
+ INFO: request:GET /image/test.png HTTP/1.1**Host: 127.0.0.1:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:17
+ INFO: SEND:image/test.png:17
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 583
+Content-Length: 104427
 Connection: close
-Content-Type: foo/json
+Content-Type: image/png
 
-:1
-ERROR: system call:bind Errno=98 exiting pid=8138
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:foo/bar.json:1
+:17
+ INFO: request:GET /image/test.png HTTP/1.1**Host: 127.0.0.1:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:18
+ INFO: request:GET /image/test.png HTTP/1.1**Host: 127.0.0.1:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:19
+ INFO: SEND:image/test.png:19
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 583
+Content-Length: 104427
 Connection: close
-Content-Type: foo/json
+Content-Type: image/png
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:foo/bar.json:1
+:19
+ERROR: system call:bind Errno=98 exiting pid=11235
+ INFO: request:GET /image/test.png HTTP/1.1**Host: 127.0.0.1:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:20
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:22
+ INFO: SEND:foo/bar.xml :22
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 583
+Content-Length: 62041
 Connection: close
-Content-Type: foo/json
+Content-Type: text/xml
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:foo/bar.json:1
+:22
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:23
+ INFO: SEND:image/test.png:23
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 583
+Content-Length: 104427
 Connection: close
-Content-Type: foo/json
+Content-Type: image/png
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:foo/bar.json:1
+:23
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:24
+ INFO: SEND:foo/bar.xml :24
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 583
+Content-Length: 62041
 Connection: close
-Content-Type: foo/json
+Content-Type: text/xml
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
+:24
+ INFO: request:GET /image/test.png HTTP/1.1**Host: 127.0.0.1:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:25
+ INFO: SEND:image/test.png:25
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 603
+Content-Length: 104427
 Connection: close
-Content-Type: foo/json
+Content-Type: image/png
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
+:25
+ERROR: system call:bind Errno=98 exiting pid=11582
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:26
+ INFO: SEND:foo/bar.xml :26
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 603
+Content-Length: 62041
 Connection: close
-Content-Type: foo/json
+Content-Type: text/xml
 
-:1
-ERROR: system call:bind Errno=98 exiting pid=9150
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
+:26
+ INFO: request:GET /image/test.png HTTP/1.1**Host: 127.0.0.1:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:27
+ INFO: SEND:image/test.png:27
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 603
+Content-Length: 104427
 Connection: close
-Content-Type: foo/json
+Content-Type: image/png
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
+:27
+ERROR: system call:bind Errno=98 exiting pid=11686
+ INFO: request:GET /image/test.png HTTP/1.1**Host: 127.0.0.1:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:29
+ INFO: SEND:image/test.png:29
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 603
+Content-Length: 104427
 Connection: close
-Content-Type: foo/json
+Content-Type: image/png
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
+:29
+ INFO: request:GET /image/test.png HTTP/1.1**Host: 127.0.0.1:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:31
+ INFO: SEND:image/test.png:31
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 603
+Content-Length: 104427
 Connection: close
-Content-Type: foo/json
+Content-Type: image/png
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
+:31
+ INFO: request:GET /image/test.png HTTP/1.1**Host: 127.0.0.1:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:32
+ INFO: SEND:image/test.png:32
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 603
+Content-Length: 104427
 Connection: close
-Content-Type: foo/json
+Content-Type: image/png
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
+:32
+ INFO: request:GET /image/test.png HTTP/1.1**Host: 127.0.0.1:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:33
+ INFO: SEND:image/test.png:33
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 603
+Content-Length: 104427
 Connection: close
-Content-Type: foo/xml
+Content-Type: image/png
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
+:33
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:34
+ INFO: SEND:image/test.png:34
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 603
+Content-Length: 104427
 Connection: close
-Content-Type: foo/xml
+Content-Type: image/png
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:2
- INFO: SEND:converted.xml:2
+:34
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:35
+ INFO: SEND:image/test.png:35
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 603
+Content-Length: 104427
 Connection: close
-Content-Type: foo/xml
+Content-Type: image/png
 
-:2
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
+:35
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:36
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:37
+ INFO: SEND:foo/bar.xml :37
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 603
+Content-Length: 62041
 Connection: close
-Content-Type: foo/xml
+Content-Type: text/xml
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
+:37
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:38
+ INFO: SEND:image/test.png:38
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 603
+Content-Length: 104427
 Connection: close
-Content-Type: foo/xml
+Content-Type: image/png
 
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
+:38
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:39
+ INFO: SEND:image/test.png:39
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 603
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:39
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:40
+ INFO: SEND:image/test.png:40
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:40
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:41
+ INFO: SEND:image/test.png:41
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:41
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:42
+ INFO: SEND:image/test.png:42
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:42
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:43
+ INFO: SEND:image/test.png:43
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:43
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:44
+ INFO: SEND:image/test.png:44
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:44
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:45
+ INFO: SEND:image/test.png:45
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:45
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:46
+ INFO: SEND:image/test.png:46
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:46
+ERROR: system call:bind Errno=98 exiting pid=13350
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:47
+ INFO: SEND:image/test.png:47
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:47
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:48
+ INFO: SEND:image/test.png:48
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:48
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:49
+ INFO: SEND:image/test.png:49
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:49
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:50
+ INFO: SEND:image/test.png:50
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:50
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:51
+ INFO: SEND:image/test.png:51
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:51
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:52
+ INFO: SEND:image/test.png:52
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:52
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:53
+ INFO: SEND:image/test.png:53
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:53
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:54
+ INFO: SEND:image/test.png:54
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:54
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:55
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:56
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:57
+ INFO: SEND:image/test.png:57
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:57
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:58
+ INFO: SEND:image/test.png:58
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:58
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:59
+ INFO: SEND:image/test.png:59
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:59
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:60
+ INFO: SEND:image/test.png:60
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:60
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:61
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:62
+ INFO: SEND:image/test.png:62
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:62
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:63
+ INFO: SEND:image/test.png:63
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:63
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:64
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:65
+ INFO: SEND:image/test.png:65
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:65
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:66
+ INFO: SEND:image/test.png:66
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:66
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:67
+ INFO: SEND:image/test.png:67
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:67
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:68
+ INFO: SEND:image/test.png:68
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:68
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:69
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:70
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:71
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:72
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:73
+ INFO: SEND:image/test.png:73
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:73
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:74
+ INFO: SEND:image/test.png:74
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:74
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:75
+ INFO: SEND:image/test.png:75
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:75
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:76
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:77
+ INFO: SEND:image/test.png:77
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:77
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:78
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:79
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:80
+ INFO: SEND:image/test.png:80
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:80
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:81
+ INFO: SEND:image/test.png:81
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 104427
+Connection: close
+Content-Type: image/png
+
+:81
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:82
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
+ INFO: SEND:foo/bar.xml :1
+ INFO: Header:HTTP/1.1 200 OK
+Server: nweb/23.0
+Content-Length: 62041
 Connection: close
 Content-Type: text/xml
 
 :1
- INFO: request:GET /favicon.ico HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive****:2
+ INFO: request:GET /favicon.ico HTTP/1.1**Host: localhost:8181**Connection: keep-alive**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://localhost:8181/foo/bar.json**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
 NOT FOUND: failed to open file:favicon.ico
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:3
- INFO: SEND:converted.xml:3
+FORBIDDEN: failed to read browser request:
+ INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:4
+ INFO: SEND:foo/light.xml :4
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 49590
-Connection: close
-Content-Type: text/xml
-
-:3
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:4
- INFO: SEND:converted.xml:4
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 49590
+Content-Length: 1
 Connection: close
 Content-Type: text/xml
 
 :4
-ERROR: system call:bind Errno=98 exiting pid=10962
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
+ INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:5
+ INFO: SEND:image/test.png:5
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
-Content-Length: 49590
+Content-Length: 104427
 Connection: close
-Content-Type: text/xml
+Content-Type: image/png
 
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:2
- INFO: SEND:converted.xml:2
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 49590
-Connection: close
-Content-Type: text/xml
-
-:2
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 49590
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json/ HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
-NOT FOUND: failed to open file:foo/light.json/
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:2
- INFO: SEND:converted.xml:2
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 48232
-Connection: close
-Content-Type: text/xml
-
-:2
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 49002
-Connection: close
-Content-Type: text/xml
-
-:1
-ERROR: system call:bind Errno=98 exiting pid=11228
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 60914
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 60910
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 57635
-Connection: close
-Content-Type: text/xml
-
-:1
-ERROR: system call:bind Errno=98 exiting pid=11532
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61334
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:2
- INFO: SEND:converted.xml:2
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61334
-Connection: close
-Content-Type: text/xml
-
-:2
-ERROR: system call:bind Errno=98 exiting pid=11719
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61694
-Connection: close
-Content-Type: text/xml
-
-:1
-ERROR: system call:bind Errno=98 exiting pid=11773
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 65009
-Connection: close
-Content-Type: text/xml
-
-:1
-ERROR: system call:bind Errno=98 exiting pid=12003
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61334
-Connection: close
-Content-Type: text/xml
-
-:1
-ERROR: system call:bind Errno=98 exiting pid=12112
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 65017
-Connection: close
-Content-Type: text/xml
-
-:1
-ERROR: system call:bind Errno=98 exiting pid=12224
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 65017
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 60144
-Connection: close
-Content-Type: text/xml
-
-:1
-ERROR: system call:bind Errno=98 exiting pid=12625
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 60144
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 65035
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61334
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61334
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61894
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61334
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 63624
-Connection: close
-Content-Type: text/xml
-
-:1
-ERROR: system call:bind Errno=98 exiting pid=13194
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61344
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61334
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61660
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61334
-Connection: close
-Content-Type: text/xml
-
-:1
-ERROR: system call:bind Errno=98 exiting pid=13573
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61334
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:2
- INFO: SEND:converted.xml:2
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61334
-Connection: close
-Content-Type: text/xml
-
-:2
+:5
 FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 61334
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 40
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:2
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:3
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:4
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:5
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:6
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:7
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:8
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:9
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:10
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:11
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:12
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:13
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:14
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:15
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:16
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:17
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:18
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:19
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:20
-ERROR: system call:bind Errno=98 exiting pid=14592
-ERROR: system call:bind Errno=98 exiting pid=14598
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 40
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 64050
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 63600
-Connection: close
-Content-Type: text/xml
-
-:1
-ERROR: system call:bind Errno=98 exiting pid=16521
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 64050
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:2
- INFO: SEND:converted.xml:2
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 64050
-Connection: close
-Content-Type: text/xml
-
-:2
- INFO: request:GET /foo/light.json HTTP/1.1**Host: 127.0.0.1:8181**User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8**Accept-Language: en-US,en;q=0.5**Accept-Encoding: gzip, deflate**Connection: keep-alive**Upgrade-Insecure-Requests: 1****:3
- INFO: SEND:converted.xml:3
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 63231
-Connection: close
-Content-Type: text/xml
-
-:3
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports::23:2
- INFO: ERROR: Can't Change to directory %s
-:.”Ùÿ:2
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports::23:1953120168
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports::23:2
- INFO: ERROR: Can't Change to directory %s
-:.6þ:2
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports::23:2
- INFO: ERROR: Can't Change to directory %s
-:.qxü:2
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports::23:823433896
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports::23:6394656
- INFO: ERROR: Can't Change to directory %s
-:.¡µý:6394656
- INFO: request:GET /images/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
-NOT FOUND: failed to open file:images/test.jpg
- INFO: request:GET /favicon.ico HTTP/1.1**Host: localhost:8181**Connection: keep-alive**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://localhost:8181/images/test.jpg**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
-NOT FOUND: failed to open file:favicon.ico
- INFO: request:GET /image/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
- INFO: SEND:image/test.jpg:3
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 27386
-Connection: close
-Content-Type: text/xml
-
-:3
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports::23:6394656
- INFO: ERROR: Can't Change to directory %s
-:.ÄÙÿ:6394656
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports::23:6394656
- INFO: ERROR: Can't Change to directory %s
-:/rXý:6394656
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports::23:-1075225816
- INFO: ERROR: Can't Change to directory %s
-:.a:-1075225816
-FORBIDDEN: failed to read browser request:
-FORBIDDEN: failed to read browser request:
-FORBIDDEN: failed to read browser request:
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports::23:1092893384
- INFO: ERROR: Can't Change to directory %s
-:.a:1092893384
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports::23:6394656
- INFO: ERROR: Can't Change to directory %s
-:./:6394656
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports::23:6394656
- INFO: ERROR: Can't Change to directory 
-:./:6394656
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:::6394656
- INFO: ERROR: Can't Change to directory 
-:./:6394656
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:::-1909378904
- INFO: ERROR: Can't Change to directory 
-:./:-1909378904
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :452601480
- INFO: ERROR: Can't Change to directory 
-:./:0
- INFO: request:GET /image/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:7
+ INFO: request:GET /image/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:7
  INFO: SEND:image/test.jpg:7
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
 Content-Length: 27386
 Connection: close
-Content-Type: text/xml
+Content-Type: image/jpg
 
 :7
  INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:8
@@ -1017,1167 +567,15 @@ Content-Type: text/xml
 Server: nweb/23.0
 Content-Length: 104427
 Connection: close
-Content-Type: text/xml
+Content-Type: image/png
 
 :8
-FORBIDDEN: failed to read browser request:
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:11
- INFO: SEND:converted.xml:11
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:11
- INFO: request:GET /images/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:12
-NOT FOUND: failed to open file:images/test.jpg
- INFO: request:GET /image/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:13
- INFO: SEND:image/test.jpg:13
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 27386
-Connection: close
-Content-Type: text/xml
-
-:13
- INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:14
- INFO: SEND:image/test.png:14
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 104427
-Connection: close
-Content-Type: text/xml
-
-:14
- INFO: request:GET /images/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:15
- INFO: SEND:images/test.png:15
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 104427
-Connection: close
-Content-Type: text/xml
-
-:15
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :-651562360
- INFO: ERROR: Can't Change to directory 
-:./:0
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :745281768
- INFO: ERROR: Can't Change to directory 
-:./:0
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :448627400
- INFO: ERROR: Can't Change to directory 
-:./:0
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :6394656
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
- INFO: SEND:image/test.png:2
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 104427
-Connection: close
-Content-Type: image/png
-
-:2
- INFO: request:GET /image/test.jpg HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
- INFO: SEND:image/test.jpg:3
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 27386
-Connection: close
-Content-Type: image/jpg
-
-:3
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=8498
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
- INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:image/test.png:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 104427
-Connection: close
-Content-Type: image/png
-
-:1
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
- INFO: SEND:converted.xml:3
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:3
- INFO: request:GET /foo/lightjson HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:4
- INFO: SEND:converted.xml:4
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 1
-Connection: close
-Content-Type: text/xml
-
-:4
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:6
- INFO: SEND:converted.xml:6
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 63231
-Connection: close
-Content-Type: text/xml
-
-:6
-FORBIDDEN: failed to read browser request:
-FORBIDDEN: failed to read browser request:FORBIDDEN: failed to read browser request:
-
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=9172
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:4
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:5
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=9257
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:converted.xml:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 63231
-Connection: close
-Content-Type: text/xml
-
-:1
-FORBIDDEN: failed to read browser request:
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=9851
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
- INFO: SEND:converted.xml:3
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 63231
-Connection: close
-Content-Type: text/xml
-
-:3
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:5
-NOT FOUND: failed to open file:converted.xml
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=9892
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=9944
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
- INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
-NOT FOUND: failed to open file:foo/light.xmln
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=10010
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=10020
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=10067
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
- INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:image/test.png:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 104427
-Connection: close
-Content-Type: image/png
-
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
-NOT FOUND: failed to open file:foo/bar.xmln
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=10395
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=10409
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=10426
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=10447
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=10475
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:foo/bar.xml :1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/lightjson HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
- INFO: SEND:foo/lightxml :2
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 1
-Connection: close
-Content-Type: text/xml
-
-:2
- INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
- INFO: SEND:foo/light.xml :3
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 63231
-Connection: close
-Content-Type: text/xml
-
-:3
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:5
- INFO: SEND:foo/light.xml :5
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 63231
-Connection: close
-Content-Type: text/xml
-
-:5
- INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:6
- INFO: SEND:foo/light.xml :6
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 63231
-Connection: close
-Content-Type: text/xml
-
-:6
- INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:7
- INFO: SEND:foo/light.xml :7
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 63231
-Connection: close
-Content-Type: text/xml
-
-:7
- INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:8
- INFO: SEND:foo/light.xml :8
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 63231
-Connection: close
-Content-Type: text/xml
-
-:8
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:10
- INFO: SEND:foo/bar.xml :10
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:10
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:12
- INFO: SEND:foo/bar.xml :12
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:12
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:13
- INFO: SEND:foo/bar.xml :13
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:13
-FORBIDDEN: failed to read browser request:
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:foo/bar.xml :1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
- INFO: SEND:foo/light.xml :2
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 65533
-Connection: close
-Content-Type: text/xml
-
-:2
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=11580
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=11591
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=11601
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=11611
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=11624
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=11634
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=11644
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=11654
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=11667
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=11696
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=11708
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=11719
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12086
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12104
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12171
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12181
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12193
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12209
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12252
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12278
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12322
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12370
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12414
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12450
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
- INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:foo/light.xml :1
+ INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:9
+ INFO: SEND:foo/bar.xml :9
  INFO: Header:HTTP/1.1 200 OK
 Server: nweb/23.0
 Content-Length: 62041
 Connection: close
 Content-Type: text/xml
 
-:1
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12851
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12876
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12894
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12918
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12930
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=12942
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=13035
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:foo/bar.xml :1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=13153
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:foo/bar.xml :1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=13260
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=13306
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=13346
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:4
- INFO: SEND:foo/bar.xml :4
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:4
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8182**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:foo/bar.xml :1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: request:GET /favicon.ico HTTP/1.1**Host: localhost:8182**Connection: keep-alive**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://localhost:8182/foo/bar.json**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:2
-NOT FOUND: failed to open file:favicon.ico
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=13410
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:foo/bar.xml :1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:1
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=13587
- INFO: hint: nweb Port-Number Top-Directory		version %d
-
-	nweb is a small and very safe mini web server
-	nweb only servers out file/web pages with extensions named below
-	 and only from the named directory or its sub-directories.
-	There is no fancy features = safe and secure.
-
-	Example: nweb 8080 /home/nwebdir &
-
-	Only Supports:: :0
-ERROR: system call:bind Errno=98 exiting pid=13597
- INFO: nweb starting:8181:13765
- INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:1
- INFO: SEND:image/test.png:1
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 104427
-Connection: close
-Content-Type: image/png
-
-:1
-FORBIDDEN: failed to read browser request:
-ERROR: system call:bind Errno=98 exiting pid=13865
- INFO: request:GET /image/test.png HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:3
- INFO: SEND:image/test.png:3
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 104427
-Connection: close
-Content-Type: image/png
-
-:3
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:4
- INFO: SEND:foo/bar.xml :4
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:4
-ERROR: system call:bind Errno=98 exiting pid=13904
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:6
- INFO: SEND:foo/light.xml :6
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 62041
-Connection: close
-Content-Type: text/xml
-
-:6
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:8
- INFO: SEND:foo/light.xml :8
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 62041
-Connection: close
-Content-Type: text/xml
-
-:8
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:10
- INFO: SEND:foo/light.xml :10
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 62041
-Connection: close
-Content-Type: text/xml
-
-:10
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:12
- INFO: SEND:foo/light.xml :12
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 62041
-Connection: close
-Content-Type: text/xml
-
-:12
-FORBIDDEN: failed to read browser request:
- INFO: request:GET /foo/light.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:14
- INFO: SEND:foo/light.xml :14
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 62041
-Connection: close
-Content-Type: text/xml
-
-:14
- INFO: request:GET /foo/bar.json HTTP/1.1**Host: localhost:8181**Connection: keep-alive**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4****:15
- INFO: SEND:foo/bar.xml :15
- INFO: Header:HTTP/1.1 200 OK
-Server: nweb/23.0
-Content-Length: 647
-Connection: close
-Content-Type: text/xml
-
-:15
-FORBIDDEN: failed to read browser request:
+:9

@@ -87,7 +87,7 @@ void logger(int type, const std::string &s1, const std::string &s2, int socket_f
             break;
     }
 
-    std::cout << logbuffer<< std::endl << std::endl;
+//    std::cout << logbuffer<< std::endl << std::endl;
 
     /* No checks here, nothing can be done with a failure anyway */
     if((fd = open("nweb.log", O_CREAT| O_WRONLY | O_APPEND,0644)) >= 0)
@@ -234,25 +234,28 @@ int main(int argc, char **argv)
     static struct sockaddr_in cli_addr; /* static = initialised to zeros */
     static struct sockaddr_in serv_addr; /* static = initialised to zeros */
  
-    if( argc < 3 || !strcmp(argv[1], "-?") )
+    if( argc > 1  )
     {
-        logger(LOG,"hint: nweb Port-Number Top-Directory\t\tversion %d\n\n"
-                   "\tnweb is a small and very safe mini web server\n"
-                   "\tnweb only servers out file/web pages with extensions named below\n"
-                   "\t and only from the named directory or its sub-directories.\n"
-                   "\tThere is no fancy features = safe and secure.\n\n"
-                   "\tExample: nweb 8080 /home/nwebdir &\n\n"
-                   "\tOnly Supports:", " ", 0);
+        if(!strcmp(argv[1], "-?"))
+        {
+            logger(LOG,"hint: nweb Port-Number Top-Directory\t\tversion %d\n\n"
+                       "\tnweb is a small and very safe mini web server\n"
+                       "\tnweb only servers out file/web pages with extensions named below\n"
+                       "\t and only from the named directory or its sub-directories.\n"
+                       "\tThere is no fancy features = safe and secure.\n\n"
+                       "\tExample: nweb 8181 /home/nwebdir &\n\n"
+                       "\tOnly Supports:", " ", 0);
 
-        for(i=0; !extensions[i].ext.empty(); i++)
-            (void)printf("    %s",extensions[i].ext.c_str());
+            for(i=0; !extensions[i].ext.empty(); i++)
+                (void)printf("    %s",extensions[i].ext.c_str());
 
-        (void)printf( "\n\tNot Supported: URLs including \"..\", Java, Javascript, CGI\n"
-                        "\tNot Supported: directories / /etc /bin /lib /tmp /usr /dev /sbin \n"
-                        "\tNo warranty given or implied\n\tNigel Griffiths nag@uk.ibm.com\n"  );
+            (void)printf( "\n\tNot Supported: URLs including \"..\", Java, Javascript, CGI\n"
+                          "\tNot Supported: directories / /etc /bin /lib /tmp /usr /dev /sbin \n"
+                          "\tNo warranty given or implied\n\tNigel Griffiths nag@uk.ibm.com\n"  );
+        }
 
     }
-    else if(argc > 3 )
+    else if(argc > 2 )
     {
         port = atoi(argv[1]);
         rootDir = argv[2];
@@ -277,7 +280,7 @@ int main(int argc, char **argv)
 
     /* Become deamon + unstopable and no zombies children (= no wait()) */
     if(fork() != 0)
-        return 7; /* parent returns OK to shell */
+        return 0; /* parent returns OK to shell */
     (void)signal(SIGCLD, SIG_IGN); /* ignore child death */
     (void)signal(SIGHUP, SIG_IGN); /* ignore terminal hangups */
     for(i=0;i<32;i++)
